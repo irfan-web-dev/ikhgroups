@@ -1,0 +1,59 @@
+.projects-table-container {
+  overflow-x: auto;
+  margin-top: 40px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.projects-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.projects-table th {
+  background-color: var(--primary);
+  color: white;
+  padding: 15px;
+  text-align: left;
+}
+
+.projects-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.projects-table tr:hover {
+  background-color: #f1f5ff;
+}
+
+.status-badge {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .projects-table {
+    font-size: 0.85rem;
+  }
+
+  .projects-table th,
+  .projects-table td {
+    padding: 8px 10px;
+  }
+}
+
+/* Status Badges */
+.status-badge.upcoming {
+  background-color: #fff8e6;
+  color: #ff8f00;
+}
+
+/* Projects Table Specific Styles */
+.projects-table th:nth-child(4),
+.projects-table td:nth-child(4) {
+  text-align: center;
+}

@@ -1,0 +1,8 @@
+.projects-table tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.status-badge.completed {
+  background-color: #e6f7e6;
+  color: #2e7d32;
+}
