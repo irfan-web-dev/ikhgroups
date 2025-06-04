@@ -9,16 +9,8 @@ import MobileMenu from "@/components/MobileMenu";
 import Sidebar from "@/components/Sidebar";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import MainScript from "@/components/MainScript";
-import useMainScript from "@/hooks/useMainScript";
-
-/** @type {import('next').Metadata} */
-// export const metadata = {
-//   title: "IKH Groups - Building Excellence Across Industries",
-//   description: "Delivering Quality Construction Solutions Since Inception",
-// };
 
 export default function RootLayout({ children }) {
-  useMainScript();
   return (
     <html>
       <head>

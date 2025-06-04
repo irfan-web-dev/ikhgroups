@@ -21,11 +21,6 @@ export default function Header() {
           <button
             className="mobile-menu-button"
             aria-label="Toggle mobile menu"
-            onClick={() => {
-              if (typeof toggleMobileMenu === "function") {
-                toggleMobileMenu();
-              }
-            }}
           >
             <i className="fas fa-bars" />
           </button>
