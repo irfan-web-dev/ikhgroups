@@ -1,13 +1,13 @@
 export default function StatsSection() {
   return (
-    <section id="stats" className="section stats-section">
+    <section id="stats" className="section stats-section visible">
       <div className="container">
         <div className="section-title">
           <h2>Our Achievements</h2>
           <p>Numbers that speak for our commitment to excellence</p>
         </div>
 
-        <div className="stats-grid">
+        <div className="stats-grid visible">
           <div
             className="stat-card fade-in-up"
             data-animation="fade-in-up"

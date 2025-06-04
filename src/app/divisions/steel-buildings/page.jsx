@@ -27,7 +27,7 @@ export default function SteelBuildings() {
           <div className="section-title-template">
             <h2>Our Steel Building Solutions</h2>
           </div>
-          <div className="content-box-template animate-on-scroll slide-up">
+          <div className="content-box-template animate-on-scroll slide-up visible">
             <h3>Pre-Engineered Steel Structures</h3>
             <p>
               IKH Groups specializes in the design, fabrication, and erection of

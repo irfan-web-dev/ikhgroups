@@ -2,14 +2,14 @@ import Link from "next/link";
 
 export default function ProjectsSection() {
   return (
-    <section id="projects" className="section projects-section">
+    <section id="projects" className="section projects-section visible">
       <div className="container">
         <div className="section-title">
           <h2>Our Projects</h2>
           <p>Showcasing Our Commitment to Excellence</p>
         </div>
 
-        <div className="projects-grid">
+        <div className="projects-grid visible">
           <div
             className="project-card fade-in-up"
             data-animation="fade-in-up"

@@ -1,7 +1,7 @@
 "use client";
 export default function AboutSection() {
   return (
-    <section className="section about-section" id="about">
+    <section className="section about-section visible" id="about">
       <div className="container">
         <div className="section-title">
           <h2>About Us</h2>

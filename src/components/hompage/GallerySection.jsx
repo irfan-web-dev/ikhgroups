@@ -1,13 +1,13 @@
 export default function GallerySection() {
   return (
-    <section id="gallery" className="section gallery-section">
+    <section id="gallery" className="section gallery-section visible">
       <div className="container">
         <div className="section-title">
           <h2>Project Gallery</h2>
           <p>Explore our portfolio of completed and ongoing projects</p>
         </div>
 
-        <div className="gallery-grid">
+        <div className="gallery-grid visible">
           <div
             className="gallery-item fade-in"
             data-animation="fade-in"

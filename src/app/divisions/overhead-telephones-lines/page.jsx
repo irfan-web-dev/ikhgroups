@@ -27,7 +27,7 @@ export default function OverHeadTelephonesLines() {
           <div className="section-title-template">
             <h2>Our Line Services</h2>
           </div>
-          <div className="content-box-template animate-on-scroll slide-up">
+          <div className="content-box-template animate-on-scroll slide-up visible">
             <h3>Complete Overhead Solutions</h3>
             <p>
               IKH Groups specializes in the design, installation, and

@@ -27,7 +27,7 @@ export default function QualityManagement() {
           <div className="section-title-template">
             <h2>Our Quality Commitment</h2>
           </div>
-          <div className="content-box-template animate-on-scroll slide-up">
+          <div className="content-box-template animate-on-scroll slide-up visible">
             <h3>Quality Management System</h3>
             <p>
               Our Quality Management System meets the requirements of ISO

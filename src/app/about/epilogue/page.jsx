@@ -23,7 +23,7 @@ export default function Epilogue() {
           <div className="section-title-template">
             <h2>Our Epilogue</h2>
           </div>
-          <div className="about-content animate-on-scroll slide-up">
+          <div className="about-content animate-on-scroll  visible">
             <blockquote className="about-message">
               <p>
                 ASIAN STAR FOR IKHGROUPS (IKHGROUPS) operating from Dammam is a

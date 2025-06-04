@@ -25,7 +25,7 @@ export default function President() {
           <div className="section-title-template">
             <h2>From the President's Desk</h2>
           </div>
-          <div className="about-content animate-on-scroll slide-up">
+          <div className="about-content animate-on-scroll slide-up visible">
             <div className="about-message">
               <p>
                 At the outset, we feel privileged and proud to serve the entire

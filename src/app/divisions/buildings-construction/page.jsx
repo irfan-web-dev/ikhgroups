@@ -27,7 +27,7 @@ export default function BuildingsConstruction() {
           <div className="section-title-template">
             <h2>Our Construction Services</h2>
           </div>
-          <div className="content-box-template animate-on-scroll slide-up">
+          <div className="content-box-template animate-on-scroll slide-up visible">
             <h3>Complete Building Solutions</h3>
             <p>
               IKH Groups offers comprehensive building construction services

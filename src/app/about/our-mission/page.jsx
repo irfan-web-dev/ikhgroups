@@ -25,7 +25,7 @@ export default function OurMission() {
           <div className="section-title-template">
             <h2>Our Mission</h2>
           </div>
-          <div className="about-content animate-on-scroll slide-up">
+          <div className="about-content animate-on-scroll slide-up visible">
             <blockquote className="about-message">
               <p>
                 Our mission is to provide our employees with an honest and

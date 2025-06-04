@@ -21,11 +21,11 @@ export default function GroupsChairman() {
       </section>
 
       <section className="content-section-template">
-        <div className="content-container-template">
+        <div className="content-container-template ">
           <div className="section-title-template">
             <h2>Chairman's Message</h2>
           </div>
-          <div className="about-content animate-on-scroll slide-up">
+          <div className="about-content animate-on-scroll slide-up visible">
             <blockquote className="about-message">
               <p>
                 Today IKHGROUPS has come a long way since its birth, achieving

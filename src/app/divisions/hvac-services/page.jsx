@@ -26,7 +26,7 @@ export default function HVACServices() {
           <div className="section-title-template">
             <h2>Our HVAC Solutions</h2>
           </div>
-          <div className="content-box-template animate-on-scroll slide-up">
+          <div className="content-box-template animate-on-scroll slide-up visible">
             <h3>Smart Cool</h3>
             <p>
               Construction Agencies Co. under the brand name Smart Cool is an

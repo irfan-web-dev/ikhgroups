@@ -26,7 +26,7 @@ export default function OngoingProjects() {
           <div className="section-title-template">
             <h2>Our Current Projects</h2>
           </div>
-          <div className="projects-table-container animate-on-scroll slide-up">
+          <div className="projects-table-container animate-on-scroll slide-up visible">
             <table className="projects-table">
               <thead>
                 <tr>

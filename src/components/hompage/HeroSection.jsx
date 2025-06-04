@@ -1,7 +1,7 @@
 "use client";
 export default function HeroSection() {
   return (
-    <section className="hero-section" id="home">
+    <section className="hero-section visible" id="home">
       <div className="hero-overlay">
         <div className="hero-background">
           <video id="background-video" autoPlay loop muted playsInline>

@@ -27,7 +27,7 @@ export default function Clients() {
           <div className="section-title-template">
             <h2>Our Valued Clients</h2>
           </div>
-          <div className="content-box-template animate-on-scroll slide-up">
+          <div className="content-box-template animate-on-scroll slide-up visible">
             <p>
               Clients are the key stakeholders at IKHGROUPS. We have an
               unflinching commitment to create value for all our clients and

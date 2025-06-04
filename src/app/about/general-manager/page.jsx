@@ -25,7 +25,7 @@ export default function GeneralManager() {
           <div className="section-title-template">
             <h2>From the General Manager</h2>
           </div>
-          <div className="about-content animate-on-scroll slide-up">
+          <div className="about-content animate-on-scroll visible">
             <div className="about-message">
               <p>
                 I am delighted to present a Company to you that is 'built to

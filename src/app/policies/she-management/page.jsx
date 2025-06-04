@@ -27,7 +27,7 @@ export default function SheManagement() {
           <div className="section-title-template">
             <h2>Our SHE Commitment</h2>
           </div>
-          <div className="content-box-template animate-on-scroll slide-up">
+          <div className="content-box-template animate-on-scroll slide-up visible">
             <p>
               The company recognizes that high standards of health, safety and
               welfare are an integral element of efficient business management

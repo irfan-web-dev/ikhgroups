@@ -27,7 +27,7 @@ export default function PaintingWork() {
           <div className="section-title-template">
             <h2>Our Painting Services</h2>
           </div>
-          <div className="content-box-template animate-on-scroll slide-up">
+          <div className="content-box-template animate-on-scroll slide-up visible">
             <h3>Complete Painting Solutions</h3>
             <p>
               IKH Groups provides professional painting services for all types

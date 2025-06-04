@@ -27,7 +27,7 @@ export default function FireProtectionSystems() {
           <div className="section-title-template">
             <h2>Our Fire Protection Services</h2>
           </div>
-          <div className="content-box-template animate-on-scroll slide-up">
+          <div className="content-box-template animate-on-scroll slide-up visible">
             <h3>Life Safety Solutions</h3>
             <p>
               IKH Groups provides end-to-end fire protection systems for all

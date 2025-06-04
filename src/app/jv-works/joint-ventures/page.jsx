@@ -27,7 +27,7 @@ export default function JointVentures() {
           <div className="section-title-template">
             <h2>Our Ventures</h2>
           </div>
-          <div className="content-box-template animate-on-scroll slide-up">
+          <div className="content-box-template animate-on-scroll slide-up visible">
             <div className="jv-content-wrapper">
               <div className="jv-image-container">
                 <img

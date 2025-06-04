@@ -26,7 +26,7 @@ export default function Constructions() {
           <div className="section-title-template">
             <h2>Our Construction Services</h2>
           </div>
-          <div className="content-box-template animate-on-scroll slide-up">
+          <div className="content-box-template animate-on-scroll slide-up visible">
             <h3>Core Areas of Activities</h3>
             <ul className="list-style-template">
               <li>Power Plants (Open/Combined Cycle)</li>

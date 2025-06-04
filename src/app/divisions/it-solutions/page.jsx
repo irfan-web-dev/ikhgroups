@@ -26,7 +26,7 @@ export default function ITSolutions() {
           <div className="section-title-template">
             <h2>Our IT Services</h2>
           </div>
-          <div className="content-box-template animate-on-scroll slide-up">
+          <div className="content-box-template animate-on-scroll slide-up visible">
             <h3>Comprehensive IT Solutions</h3>
             <p>
               The scope of the Division encompasses the planning, development,

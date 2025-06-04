@@ -27,7 +27,7 @@ export default function CivilWorkRCCBuildings() {
           <div className="section-title-template">
             <h2>Our Civil Construction Services</h2>
           </div>
-          <div className="content-box-template animate-on-scroll slide-up">
+          <div className="content-box-template animate-on-scroll slide-up visible">
             <h3>Expertise in RCC Structures</h3>
             <p>
               IKH Groups provides top-tier civil construction services with

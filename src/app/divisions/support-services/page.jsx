@@ -26,7 +26,7 @@ export default function SupportServices() {
           <div className="section-title-template">
             <h2>Our Support Services</h2>
           </div>
-          <div className="content-box-template animate-on-scroll slide-up">
+          <div className="content-box-template animate-on-scroll slide-up visible">
             <h3>Civil Works</h3>
             <p>
               Concrete Core drilling is the core of our business. IKHGROUPS can

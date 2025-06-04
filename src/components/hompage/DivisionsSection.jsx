@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function DivisionsSection() {
   return (
-    <section className="section services-section" id="services">
+    <section className="section services-section visible" id="services">
       <div className="container">
         <div className="section-title">
           <h2>Our Divisions</h2>

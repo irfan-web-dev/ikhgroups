@@ -24,7 +24,7 @@ export default function Works() {
           <div className="section-title-template">
             <h2>Our Services</h2>
           </div>
-          <div className="services-grid animate-on-scroll slide-up">
+          <div className="services-grid animate-on-scroll slide-up visible">
             <div className="service-card">
               <div className="service-icon">
                 <i className="fas fa-industry"></i>

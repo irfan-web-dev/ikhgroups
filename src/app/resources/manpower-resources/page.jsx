@@ -32,7 +32,7 @@ export default function ManpowerResources() {
             Our dedicated team of professionals brings expertise and commitment
             to every project.
           </p>
-          <div className="content-box-template animate-on-scroll slide-up">
+          <div className="content-box-template animate-on-scroll slide-up visible">
             <div className="workforce-image-container">
               <img
                 src="https://i0.wp.com/ikhgroups.com/wp-content/uploads/2020/04/Manpower-Resources.jpg?w=1431&ssl=1"

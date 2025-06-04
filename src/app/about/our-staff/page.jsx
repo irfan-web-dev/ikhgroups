@@ -25,7 +25,7 @@ export default function OurStaff() {
             <h2>Our Leadership Team</h2>
           </div>
 
-          <div className="staff-grid animate-on-scroll slide-up">
+          <div className="staff-grid animate-on-scroll slide-up visible">
             <div className="staff-card">
               <div className="staff-image">
                 <img

@@ -25,7 +25,7 @@ export default function OurVision() {
           <div className="section-title-template">
             <h2>Our Objectives</h2>
           </div>
-          <div className="about-content animate-on-scroll slide-up">
+          <div className="about-content animate-on-scroll  visible">
             <blockquote className="about-message">
               <p>
                 Our first, and most important, objective is to provide a safe

@@ -27,7 +27,7 @@ export default function MechanicalWork() {
           <div className="section-title-template">
             <h2>Our Piping Services</h2>
           </div>
-          <div className="content-box-template animate-on-scroll slide-up">
+          <div className="content-box-template animate-on-scroll slide-up visible">
             <h3>Industrial Piping Expertise</h3>
             <p>
               IKH Groups specializes in comprehensive piping system solutions

@@ -975,12 +975,18 @@ ul {
 }
 
 .stat-value {
+  opacity: 0;
+  transition: opacity 0.3s ease;
   margin-bottom: 10px;
   font-size: 48px;
   font-weight: 800;
   color: var(--primary);
   position: relative;
   z-index: 1;
+}
+
+.stats-grid.visible .stat-value {
+  opacity: 1;
 }
 
 .stat-label {

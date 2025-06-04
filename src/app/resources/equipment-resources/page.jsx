@@ -33,7 +33,7 @@ export default function EquipmentResources() {
             to meet all project requirements.
           </p>
 
-          <div className="content-box-template animate-on-scroll slide-up">
+          <div className="content-box-template animate-on-scroll slide-up visible">
             <div className="equipment-table-container">
               <table className="equipment-table">
                 <thead>

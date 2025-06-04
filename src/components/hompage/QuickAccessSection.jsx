@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function QuickAccessSection() {
   return (
-    <section className="quick-access-section">
+    <section className="quick-access-section visible">
       <div className="container">
         <div className="section-title">
           <h2>Quick Access</h2>

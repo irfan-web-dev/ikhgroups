@@ -42,7 +42,7 @@ const clientLogos = [
 
 export default function ClientsSection() {
   return (
-    <section className="section clients-section" id="client-component">
+    <section className="section clients-section visible" id="client-component">
       <div className="container">
         <div className="section-title">
           <h2>Our Clients</h2>

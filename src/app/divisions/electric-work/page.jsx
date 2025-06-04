@@ -27,7 +27,7 @@ export default function ElectricWork() {
           <div className="section-title-template">
             <h2>Our Electrical Services</h2>
           </div>
-          <div className="content-box-template animate-on-scroll slide-up">
+          <div className="content-box-template animate-on-scroll slide-up visible">
             <h3>Complete Electrical Solutions</h3>
             <p>
               IKH Groups provides end-to-end electrical services for all types
