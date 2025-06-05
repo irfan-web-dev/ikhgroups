@@ -13,7 +13,6 @@ const clientLogos = [
   "https://images.seeklogo.com/logo-png/6/1/hyundai-engineering-logo-png_seeklogo-69059.png",
   "https://images.seeklogo.com/logo-png/6/1/hyundai-heavy-industries-logo-png_seeklogo-69063.png",
   "https://hloljob.com//images/alhajricorporation.png",
-  "https://scontent.flhe3-1.fna.fbcdn.net/v/t39.30808-6/469178009_1109458897849211_5627968930924602101_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=lnIE0orFYQUQ7kNvwF8jHMz&_nc_oc=Adl8KFqUEbyzkEG-qL562s90yH5FiCc_KqYZngLnDAumMfLSEIchb-tqXCfF6MRHX-s&_nc_zt=23&_nc_ht=scontent.flhe3-1.fna&_nc_gid=tgRGMf6KDLrUCv4fBEKi0A&oh=00_AfI4lkBuIvixAswhV5-lVJjRCrC8CteOnhp4fp_yQHVDkg&oe=683FDA03",
   "https://images.seeklogo.com/logo-png/12/1/snc-lavalin-logo-png_seeklogo-128474.png",
   "https://logowik.com/content/uploads/images/technip4442.logowik.com.webp",
   "https://www.sudelettra.com/wp-content/uploads/2017/02/logo-sudelettra.png",

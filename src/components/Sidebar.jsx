@@ -52,7 +52,7 @@ export default function Sidebar() {
 
           {/* JV & Works Dropdown */}
           <li className="has-dropdown">
-            <Link href="#jv-works" className="sidebar-link">
+            <Link href="/jv-works/joint-ventures" className="sidebar-link">
               <i className="fas fa-briefcase" />
               <span>JV & Works</span>
               <i className="fas fa-chevron-right dropdown-arrow" />
@@ -138,7 +138,7 @@ export default function Sidebar() {
 
           {/* Policies Dropdown */}
           <li className="has-dropdown">
-            <Link href="#policies" className="sidebar-link">
+            <Link href="/policies/quality-management" className="sidebar-link">
               <i className="fas fa-file-alt" />
               <span>Policies</span>
               <i className="fas fa-chevron-right dropdown-arrow" />
@@ -157,7 +157,7 @@ export default function Sidebar() {
 
           {/* Resources Dropdown */}
           <li className="has-dropdown">
-            <Link href="#resources" className="sidebar-link">
+            <Link href="/resources/manpower-resources" className="sidebar-link">
               <i className="fas fa-building" />
               <span>Resources</span>
               <i className="fas fa-chevron-right dropdown-arrow" />
