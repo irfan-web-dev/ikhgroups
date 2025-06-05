@@ -4,13 +4,13 @@ import "./about-our-company.css";
 export default function AboutOurCompany() {
   return (
     <>
-      <section className="hero-section-template">
-        <div class="content-container-template">
-          <div class="section-title-template">
+      <section className="content-section-template">
+        <div className="content-container-template">
+          <div className="section-title-template">
             <h2>About Our Company</h2>
           </div>
-          <div class="pdf-container">
-            <iframe src="/public/documents/E-mail-Profile.pdf"></iframe>
+          <div className="pdf-container">
+            <iframe src="/documents/E-mail-Profile.pdf" />
           </div>
         </div>
       </section>
