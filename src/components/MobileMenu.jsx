@@ -67,7 +67,7 @@ export default function MobileMenu() {
 
         {/* JV & Works Dropdown */}
         <li className="mobile-dropdown">
-          <Link href="#jv-works" className="mobile-nav-link">
+          <Link href="/jv-works/joint-ventures" className="mobile-nav-link">
             <span>JV & Works</span>
             <i className="fas fa-chevron-down mobile-dropdown-arrow" />
           </Link>
@@ -114,40 +114,31 @@ export default function MobileMenu() {
           </Link>
           <ul className="mobile-dropdown-menu">
             <li>
-              <Link
-                href="Divisions/Construction.html"
-                className="mobile-nav-link"
-              >
+              <Link href="/divisions/construction" className="mobile-nav-link">
                 Construction
               </Link>
             </li>
             <li>
               <Link
-                href="Divisions/Support_Services.html"
+                href="/divisions/support-services"
                 className="mobile-nav-link"
               >
                 Support Services
               </Link>
             </li>
             <li>
-              <Link
-                href="Divisions/HVAC-Services.html"
-                className="mobile-nav-link"
-              >
+              <Link href="/divisions/hvac-services" className="mobile-nav-link">
                 HVAC Services
               </Link>
             </li>
             <li>
-              <Link
-                href="Divisions/IT_Solutions.html"
-                className="mobile-nav-link"
-              >
+              <Link href="/divisions/it-solutions" className="mobile-nav-link">
                 IT Solutions
               </Link>
             </li>
             <li>
               <Link
-                href="Divisions/Civil_Work_RCC_Buildings.html"
+                href="/divisions/civil-work-rcc-buildings"
                 className="mobile-nav-link"
               >
                 Civil Work & RCC Buildings
@@ -155,23 +146,20 @@ export default function MobileMenu() {
             </li>
             <li>
               <Link
-                href="Divisions/Steel_Buildings.html"
+                href="/divisions/steel-buildings"
                 className="mobile-nav-link"
               >
                 Steel Buildings
               </Link>
             </li>
             <li>
-              <Link
-                href="Divisions/Electric_Work.html"
-                className="mobile-nav-link"
-              >
+              <Link href="/divisions/electric-work" className="mobile-nav-link">
                 Electrical Work
               </Link>
             </li>
             <li>
               <Link
-                href="Divisions/Buildings_Construction.html"
+                href="/divisions/buildings-construction"
                 className="mobile-nav-link"
               >
                 Buildings Construction
@@ -179,7 +167,7 @@ export default function MobileMenu() {
             </li>
             <li>
               <Link
-                href="Divisions/OverHead_Telephones_Lines.html"
+                href="/divisions/overhead-telephones-lines"
                 className="mobile-nav-link"
               >
                 Overhead & Telephone Lines
@@ -187,33 +175,27 @@ export default function MobileMenu() {
             </li>
             <li>
               <Link
-                href="Divisions/Mechanical_Work.html"
+                href="/divisions/mechanical-work"
                 className="mobile-nav-link"
               >
                 Mechanical Work
               </Link>
             </li>
             <li>
-              <Link
-                href="Divisions/Piping_System.html"
-                className="mobile-nav-link"
-              >
+              <Link href="/divisions/piping-system" className="mobile-nav-link">
                 Piping Systems
               </Link>
             </li>
             <li>
               <Link
-                href="Divisions/Fire_Protection_Systems.html"
+                href="/divisions/fire-protection-systems"
                 className="mobile-nav-link"
               >
                 Fire Protection Systems
               </Link>
             </li>
             <li>
-              <Link
-                href="Divisions/Painting_Work.html"
-                className="mobile-nav-link"
-              >
+              <Link href="/divisions/painting-work" className="mobile-nav-link">
                 Painting Work
               </Link>
             </li>
@@ -222,7 +204,7 @@ export default function MobileMenu() {
 
         {/* Policies Dropdown */}
         <li className="mobile-dropdown">
-          <Link href="#policies" className="mobile-nav-link">
+          <Link href="/policies/quality-management" className="mobile-nav-link">
             <span>Policies</span>
             <i className="fas fa-chevron-down mobile-dropdown-arrow" />
           </Link>
@@ -245,7 +227,10 @@ export default function MobileMenu() {
 
         {/* Resources Dropdown */}
         <li className="mobile-dropdown">
-          <Link href="#resources" className="mobile-nav-link">
+          <Link
+            href="/resources/manpower-resources"
+            className="mobile-nav-link"
+          >
             <span>Resources</span>
             <i className="fas fa-chevron-down mobile-dropdown-arrow" />
           </Link>

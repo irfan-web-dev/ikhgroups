@@ -107,7 +107,7 @@ export default function Sidebar() {
                 <Link href="/divisions/steel-buildings">Steel Buildings</Link>
               </li>
               <li>
-                <Link href="divisions/electric-work">Electrical Work</Link>
+                <Link href="/divisions/electric-work">Electrical Work</Link>
               </li>
               <li>
                 <Link href="/divisions/buildings-construction">
