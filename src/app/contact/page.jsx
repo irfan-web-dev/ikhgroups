@@ -57,12 +57,15 @@ export default function Contact() {
               Get in touch with our team for inquiries, quotes, or any questions
               you may have about your construction projects.
             </p>
-            <Link
-              href="#contactForm"
+            <button
+              onClick={() => {
+                const contactForm = document.getElementById("contactForm");
+                contactForm?.scrollIntoView({ behavior: "smooth" });
+              }}
               className="button button-primary animate__animated animate__pulse animate__infinite"
             >
               Send Message <i className="fas fa-paper-plane" />
-            </Link>
+            </button>
           </div>
 
           <LottiePlayer src="https://lottie.host/f3f39cf3-a512-49a9-9094-5e33f5e99654/8H97tqqugD.lottie" />

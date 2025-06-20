@@ -1,4 +1,7 @@
 "use client";
+
+import Link from "next/link";
+
 export default function HeroSection() {
   return (
     <section className="hero-section visible" id="home">
@@ -22,12 +25,15 @@ export default function HeroSection() {
           <p className="hero-text animate__animated animate__fadeInUp">
             IKH General construction CO.
           </p>
-          <a
-            href="#about"
+          <button
+            onClick={() => {
+              const section = document.getElementById("about");
+              section?.scrollIntoView({ behavior: "smooth" });
+            }}
             className="button button-primary animate__animated animate__fadeInUp animate__delay-1s"
           >
             Read More
-          </a>
+          </button>
         </div>
       </div>
     </section>
