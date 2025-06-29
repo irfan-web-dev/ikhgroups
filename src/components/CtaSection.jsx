@@ -1,6 +1,7 @@
 export default function CtaSection() {
   return (
     <section id="contact" className="cta-section">
+      <div className="cta-pattern"></div>
       <div className="container">
         <div className="cta-content">
           <h2 className="cta-title">Ready to Start Your Project?</h2>
