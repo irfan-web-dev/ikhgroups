@@ -6,8 +6,18 @@ export default function FireProtectionSystems() {
   return (
     <>
       <section className="hero-section-template">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="hero-video-background"
+        >
+          <source src="/videos/fire-protection-bg.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
         <div className="container hero-container">
-          <div className="hero-text-content floating">
+          <div className="hero-text-content">
             <h1 className="animate__animated animate__zoomInDown">
               Fire Protection Systems
             </h1>
@@ -17,8 +27,6 @@ export default function FireProtectionSystems() {
               advanced systems.
             </p>
           </div>
-
-          <LottiePlayer src="https://lottie.host/5c5855e9-8a12-4e20-bf41-a9c633c45020/8kV9DEKFot.lottie" />
         </div>
       </section>
 
@@ -27,6 +35,11 @@ export default function FireProtectionSystems() {
           <div className="section-title-template">
             <h2>Our Fire Protection Services</h2>
           </div>
+
+          <div className="content-animation">
+            <LottiePlayer src="https://lottie.host/5c5855e9-8a12-4e20-bf41-a9c633c45020/8kV9DEKFot.lottie" />
+          </div>
+
           <div className="content-box-template animate-on-scroll slide-up visible">
             <h3>Life Safety Solutions</h3>
             <p>

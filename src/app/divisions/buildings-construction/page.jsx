@@ -6,8 +6,18 @@ export default function BuildingsConstruction() {
   return (
     <>
       <section className="hero-section-template">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="hero-video-background"
+        >
+          <source src="/videos/buildings-bg.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
         <div className="container hero-container">
-          <div className="hero-text-content floating">
+          <div className="hero-text-content">
             <h1 className="animate__animated animate__zoomInDown">
               Buildings Construction
             </h1>
@@ -17,8 +27,6 @@ export default function BuildingsConstruction() {
               and within budget.
             </p>
           </div>
-
-          <LottiePlayer src="https://lottie.host/cbb946b3-30ef-4e73-b4ed-028c8042ebae/eZyXt2mTij.lottie" />
         </div>
       </section>
 
@@ -27,6 +35,11 @@ export default function BuildingsConstruction() {
           <div className="section-title-template">
             <h2>Our Construction Services</h2>
           </div>
+
+          <div className="content-animation">
+            <LottiePlayer src="https://lottie.host/cbb946b3-30ef-4e73-b4ed-028c8042ebae/eZyXt2mTij.lottie" />
+          </div>
+
           <div className="content-box-template animate-on-scroll slide-up visible">
             <h3>Complete Building Solutions</h3>
             <p>

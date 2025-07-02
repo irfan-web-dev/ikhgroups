@@ -6,8 +6,18 @@ export default function CivilWorkRCCBuildings() {
   return (
     <>
       <section className="hero-section-template">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="hero-video-background"
+        >
+          <source src="/videos/civil-work-bg.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
         <div className="container hero-container">
-          <div className="hero-text-content floating">
+          <div className="hero-text-content">
             <h1 className="animate__animated animate__zoomInDown">
               Civil Work & RCC Buildings
             </h1>
@@ -17,8 +27,6 @@ export default function CivilWorkRCCBuildings() {
               industrial projects.
             </p>
           </div>
-
-          <LottiePlayer src="https://lottie.host/278fdbe7-5a70-45b3-9411-deb9562f2637/Wb3NMW1RNc.lottie" />
         </div>
       </section>
 
@@ -27,6 +35,11 @@ export default function CivilWorkRCCBuildings() {
           <div className="section-title-template">
             <h2>Our Civil Construction Services</h2>
           </div>
+
+          <div className="content-animation">
+            <LottiePlayer src="https://lottie.host/278fdbe7-5a70-45b3-9411-deb9562f2637/Wb3NMW1RNc.lottie" />
+          </div>
+
           <div className="content-box-template animate-on-scroll slide-up visible">
             <h3>Expertise in RCC Structures</h3>
             <p>

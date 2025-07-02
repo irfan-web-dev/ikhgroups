@@ -6,8 +6,18 @@ export default function ElectricWork() {
   return (
     <>
       <section className="hero-section-template">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="hero-video-background"
+        >
+          <source src="/videos/electric-work-bg.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
         <div className="container hero-container">
-          <div className="hero-text-content floating">
+          <div className="hero-text-content">
             <h1 className="animate__animated animate__zoomInDown">
               Electric Work
             </h1>
@@ -17,8 +27,6 @@ export default function ElectricWork() {
               reliability.
             </p>
           </div>
-
-          <LottiePlayer src="https://lottie.host/385854f9-ff41-4f96-b84a-111e657f8e3a/i81B6a2PBb.lottie" />
         </div>
       </section>
 
@@ -27,6 +35,11 @@ export default function ElectricWork() {
           <div className="section-title-template">
             <h2>Our Electrical Services</h2>
           </div>
+
+          <div className="content-animation">
+            <LottiePlayer src="https://lottie.host/385854f9-ff41-4f96-b84a-111e657f8e3a/i81B6a2PBb.lottie" />
+          </div>
+
           <div className="content-box-template animate-on-scroll slide-up visible">
             <h3>Complete Electrical Solutions</h3>
             <p>

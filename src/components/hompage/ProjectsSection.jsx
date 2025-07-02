@@ -16,7 +16,7 @@ export default function ProjectsSection() {
             data-delay="0"
           >
             <img
-              src="/images/industry_project.webp"
+              src="/images/industry_project.JPEG"
               alt="Industrial Plant"
               className="project-image"
             />
@@ -35,7 +35,7 @@ export default function ProjectsSection() {
             data-delay="200"
           >
             <img
-              src="/images/commercial_project.jpg"
+              src="/images/commercial-project.JPEG"
               alt="Commercial Complex"
               className="project-image"
             />
@@ -54,7 +54,7 @@ export default function ProjectsSection() {
             data-delay="400"
           >
             <img
-              src="/images/building_project.jpg"
+              src="/images/building-project.JPEG"
               alt="Residential Building"
               className="project-image"
             />

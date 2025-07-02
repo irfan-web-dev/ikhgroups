@@ -6,8 +6,18 @@ export default function SteelBuildings() {
   return (
     <>
       <section className="hero-section-template">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="hero-video-background"
+        >
+          <source src="/videos/steel-buildings-bg.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
         <div className="container hero-container">
-          <div className="hero-text-content floating">
+          <div className="hero-text-content">
             <h1 className="animate__animated animate__zoomInDown">
               Steel Buildings
             </h1>
@@ -17,8 +27,6 @@ export default function SteelBuildings() {
               applications.
             </p>
           </div>
-
-          <LottiePlayer src="https://lottie.host/a36cb6b0-12f4-4350-87ae-7c12fdd5c614/1vXKjOXr58.lottie" />
         </div>
       </section>
 
@@ -27,46 +35,66 @@ export default function SteelBuildings() {
           <div className="section-title-template">
             <h2>Our Steel Building Solutions</h2>
           </div>
+
+          <div className="content-animation">
+            <LottiePlayer src="https://lottie.host/a36cb6b0-12f4-4350-87ae-7c12fdd5c614/1vXKjOXr58.lottie" />
+          </div>
+
           <div className="content-box-template animate-on-scroll slide-up visible">
-            <h3>Pre-Engineered Steel Structures</h3>
-            <p>
-              IKH Groups specializes in the design, fabrication, and erection of
-              high-quality steel buildings for diverse industrial and commercial
-              applications. Our steel structures offer superior
-              strength-to-weight ratios, faster construction timelines, and
-              long-term durability compared to conventional building methods. We
-              provide complete turnkey solutions for warehouses, factories,
-              aircraft hangars, commercial complexes, and specialized industrial
-              facilities.
-            </p>
-            <p>
-              Our expertise includes pre-engineered steel buildings (PEB) that
-              are custom-designed to meet specific load requirements and
-              environmental conditions of Saudi Arabia. We utilize advanced 3D
-              modeling software for precise design and detailing, ensuring
-              optimal material usage and structural integrity. All our steel
-              components are fabricated in controlled factory conditions using
-              high-grade steel that meets international standards.
-            </p>
-            <p>
-              The advantages of our steel building solutions include clear-span
-              designs that provide column-free interior spaces, excellent
-              resistance to extreme weather conditions, and flexibility for
-              future expansions. We incorporate advanced insulation systems to
-              enhance energy efficiency and occupant comfort in our steel
-              structures. Our construction methodology minimizes on-site work,
-              reducing construction time by up to 40% compared to traditional
-              methods.
-            </p>
-            <p>
-              With a team of certified steel structure engineers and skilled
-              erection crews, we ensure precision in every phase from foundation
-              work to final commissioning. Our quality control processes adhere
-              to both international standards and local Saudi building codes. We
-              partner with leading steel manufacturers to source premium
-              materials while maintaining competitive pricing for our clients
-              across various sectors.
-            </p>
+            <div className="service-section">
+              <h3>Pre-Engineered Steel Structures</h3>
+              <p>
+                IKH Groups specializes in the design, fabrication, and erection
+                of high-quality steel buildings for diverse industrial and
+                commercial applications across Saudi Arabia.
+              </p>
+            </div>
+
+            <div className="service-section">
+              <h3>Key Applications</h3>
+              <ul className="list-style-template">
+                <li>Industrial warehouses and factories</li>
+                <li>Aircraft hangars and maintenance facilities</li>
+                <li>Commercial complexes and showrooms</li>
+                <li>Retail centers and supermarkets</li>
+                <li>Sports facilities and event venues</li>
+                <li>Agricultural storage buildings</li>
+              </ul>
+            </div>
+
+            <div className="service-section">
+              <h3>Technical Advantages</h3>
+              <ul className="list-style-template">
+                <li>Clear-span designs up to 100m+</li>
+                <li>40% faster construction than conventional methods</li>
+                <li>Superior strength-to-weight ratio</li>
+                <li>Customizable roof and wall systems</li>
+                <li>Seismic and wind load resistance</li>
+                <li>Energy-efficient insulation options</li>
+              </ul>
+            </div>
+
+            <div className="service-section">
+              <h3>Our Process</h3>
+              <ul className="list-style-template">
+                <li>3D modeling and structural analysis</li>
+                <li>Precision factory fabrication</li>
+                <li>Bolt-up construction methodology</li>
+                <li>Quality-controlled erection</li>
+                <li>Integrated MEP solutions</li>
+                <li>Custom finishing options</li>
+              </ul>
+            </div>
+
+            <div className="service-section">
+              <h3>Quality Assurance</h3>
+              <p>
+                Our steel buildings comply with international standards (AISC,
+                MBMA) and Saudi building codes. We use certified materials and
+                implement rigorous quality control at every stage from design to
+                completion.
+              </p>
+            </div>
           </div>
         </div>
       </section>

@@ -6,8 +6,18 @@ export default function Constructions() {
   return (
     <>
       <section className="hero-section-template">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="hero-video-background"
+        >
+          <source src="/videos/constructions.MP4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
         <div className="container hero-container">
-          <div className="hero-text-content floating">
+          <div className="hero-text-content">
             <h1 className="animate__animated animate__zoomInDown">
               Constructions
             </h1>
@@ -16,8 +26,6 @@ export default function Constructions() {
               solutions with a focus on safety and innovation.
             </p>
           </div>
-
-          <LottiePlayer src="https://lottie.host/ca345e6c-3fd8-41e7-af1d-de5b38aaa66e/WsV7fDisbO.lottie" />
         </div>
       </section>
 
@@ -26,6 +34,11 @@ export default function Constructions() {
           <div className="section-title-template">
             <h2>Our Construction Services</h2>
           </div>
+
+          <div className="content-animation">
+            <LottiePlayer src="https://lottie.host/ca345e6c-3fd8-41e7-af1d-de5b38aaa66e/WsV7fDisbO.lottie" />
+          </div>
+
           <div className="content-box-template animate-on-scroll slide-up visible">
             <h3>Core Areas of Activities</h3>
             <ul className="list-style-template">
@@ -40,6 +53,7 @@ export default function Constructions() {
               <li>Mechanical Works (Piping & Structural)</li>
             </ul>
 
+            {/* Rest of your content remains the same */}
             <h3>Plant Construction & Maintenance</h3>
             <ul className="list-style-template">
               <li>

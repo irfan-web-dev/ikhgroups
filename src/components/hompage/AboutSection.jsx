@@ -1,8 +1,30 @@
 "use client";
 export default function AboutSection() {
   return (
-    <section className="section about-section visible" id="about">
-      <div className="container">
+    <section
+      className="section about-section visible"
+      id="about"
+      style={{ position: "relative" }}
+    >
+      <div
+        style={{
+          position: "absolute",
+          top: "35%",
+          left: "50%",
+          transform: "translate(-50%, -50%)",
+          width: "50%",
+          height: "50%",
+          zIndex: 0,
+          opacity: 0.1,
+          backgroundImage: "url(/images/bg-logo.png)",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+          backgroundSize: "contain",
+          pointerEvents: "none",
+        }}
+      ></div>
+
+      <div className="container" style={{ position: "relative", zIndex: 1 }}>
         <div className="section-title">
           <h2>About Us</h2>
           <p>Learn more about our company and our commitment to excellence</p>
@@ -70,7 +92,7 @@ export default function AboutSection() {
           <div className="about-image-wrapper">
             <div className="about-image">
               <img
-                src="https://images.unsplash.com/photo-1535732759880-bbd5c7265e3f?q=80&w=1364&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                src="/images/about-section-pic.png"
                 alt="IKH Groups Building"
               />
               <div className="image-overlay"></div>

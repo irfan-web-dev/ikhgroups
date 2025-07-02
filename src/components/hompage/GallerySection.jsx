@@ -14,7 +14,7 @@ export default function GallerySection() {
             data-delay="0"
           >
             <img
-              src="/images/industry_project.webp"
+              src="/images/industry_project.JPEG"
               alt="Construction site with cranes"
               className="gallery-image"
             />
@@ -28,7 +28,7 @@ export default function GallerySection() {
             data-delay="100"
           >
             <img
-              src="/images/building_project.jpg"
+              src="/images/building-project.JPEG"
               alt="Office building exterior"
               className="gallery-image"
             />
@@ -42,7 +42,7 @@ export default function GallerySection() {
             data-delay="200"
           >
             <img
-              src="/images/commercial_project.jpg"
+              src="/images/commercial-project.JPEG"
               alt="Residential apartments"
               className="gallery-image"
             />
@@ -56,7 +56,7 @@ export default function GallerySection() {
             data-delay="300"
           >
             <img
-              src="/images/industry_project.webp"
+              src="/images/industry_project.JPEG"
               alt="Interior design"
               className="gallery-image"
             />
@@ -70,7 +70,7 @@ export default function GallerySection() {
             data-delay="400"
           >
             <img
-              src="/images/building_project.jpg"
+              src="/images/building-project.JPEG"
               alt="HVAC installation"
               className="gallery-image"
             />
@@ -84,7 +84,7 @@ export default function GallerySection() {
             data-delay="500"
           >
             <img
-              src="/images/commercial_project.jpg"
+              src="/images/commercial-project.JPEG"
               alt="Construction team"
               className="gallery-image"
             />

@@ -48,7 +48,7 @@ export default function HeroSection() {
             preload="auto"
             className={videoLoaded ? "video-loaded" : "video-loading"}
           >
-            <source src="/images/hero_section_video.MP4" type="video/mp4" />
+            <source src="/videos/hero_section_video.MP4" type="video/mp4" />
           </video>
         </div>
       </div>

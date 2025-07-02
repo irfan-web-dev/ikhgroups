@@ -2,12 +2,22 @@
 
 import LottiePlayer from "@/components/LottiePlayer";
 
-export default function MechanicalWork() {
+export default function PipingSystem() {
   return (
     <>
       <section className="hero-section-template">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="hero-video-background"
+        >
+          <source src="/videos/piping-system-bg.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
         <div className="container hero-container">
-          <div className="hero-text-content floating">
+          <div className="hero-text-content">
             <h1 className="animate__animated animate__zoomInDown">
               Piping System
             </h1>
@@ -17,8 +27,6 @@ export default function MechanicalWork() {
               maintenance.
             </p>
           </div>
-
-          <LottiePlayer src="https://lottie.host/a8b0042e-32fe-48f9-8851-f5d6401532d6/QY3VAsHKCI.lottie" />
         </div>
       </section>
 
@@ -27,45 +35,67 @@ export default function MechanicalWork() {
           <div className="section-title-template">
             <h2>Our Piping Services</h2>
           </div>
+
+          <div className="content-animation">
+            <LottiePlayer src="https://lottie.host/a8b0042e-32fe-48f9-8851-f5d6401532d6/QY3VAsHKCI.lottie" />
+          </div>
+
           <div className="content-box-template animate-on-scroll slide-up visible">
-            <h3>Industrial Piping Expertise</h3>
-            <p>
-              IKH Groups specializes in comprehensive piping system solutions
-              for the oil & gas, petrochemical, power generation, and water
-              treatment industries across Saudi Arabia. Our ASME-certified
-              piping engineers and welders deliver precision installations of
-              process piping, utility networks, and pipeline systems that meet
-              the most stringent quality and safety standards.
-            </p>
-            <p>
-              Our services include complete piping system design, fabrication,
-              installation, testing, and maintenance. We work with all piping
-              materials including carbon steel, stainless steel, duplex, and
-              specialty alloys for corrosive services. Our capabilities cover
-              everything from small bore tubing to large diameter pipelines,
-              with expertise in both above-ground and underground installations.
-              All our piping work complies with ASME B31.3, API, and Saudi
-              Aramco engineering standards.
-            </p>
-            <p>
-              We provide turnkey piping solutions including stress analysis,
-              pipe routing, support design, and insulation systems. Our in-house
-              fabrication shop produces prefabricated spools using advanced
-              welding techniques, while our field teams execute complex
-              installations in operational plants with minimal disruption.
-              Specialized services include hot tapping, line stopping, and
-              pigging operations for existing pipelines.
-            </p>
-            <p>
-              With extensive experience in Saudi Arabia's industrial sector,
-              we've successfully completed piping projects for major refineries,
-              petrochemical plants, and power stations. Our quality control
-              program includes radiographic testing, hydrostatic testing, and
-              material verification to ensure piping system integrity. From
-              conceptual design to commissioning and maintenance, we deliver
-              reliable piping solutions tailored to each client's specific
-              process requirements.
-            </p>
+            <div className="service-section">
+              <h3>Industrial Piping Expertise</h3>
+              <p>
+                IKH Groups specializes in comprehensive piping system solutions
+                for the oil & gas, petrochemical, power generation, and water
+                treatment industries across Saudi Arabia. Our ASME-certified
+                professionals deliver precision installations meeting stringent
+                quality and safety standards.
+              </p>
+            </div>
+
+            <div className="service-section">
+              <h3>Core Piping Services</h3>
+              <ul className="list-style-template">
+                <li>Process piping design and installation</li>
+                <li>Utility piping networks (steam, water, air)</li>
+                <li>Pipeline construction and maintenance</li>
+                <li>Pipe fabrication and spooling</li>
+                <li>Above-ground and underground installations</li>
+                <li>Hot tapping and line stopping services</li>
+              </ul>
+            </div>
+
+            <div className="service-section">
+              <h3>Materials & Standards</h3>
+              <ul className="list-style-template">
+                <li>Carbon steel, stainless steel, duplex alloys</li>
+                <li>HDPE and corrosion-resistant materials</li>
+                <li>ASME B31.3 Process Piping Code compliance</li>
+                <li>API and Saudi Aramco standards</li>
+                <li>ANSI/ASME flange ratings</li>
+              </ul>
+            </div>
+
+            <div className="service-section">
+              <h3>Specialized Capabilities</h3>
+              <ul className="list-style-template">
+                <li>Stress analysis and pipe support design</li>
+                <li>Insulation and heat tracing systems</li>
+                <li>Pipe routing and 3D modeling</li>
+                <li>Hydrotesting and pneumatic testing</li>
+                <li>Non-destructive examination (RT, UT, PT)</li>
+                <li>Turnaround and maintenance services</li>
+              </ul>
+            </div>
+
+            <div className="service-section">
+              <h3>Quality Assurance</h3>
+              <p>
+                Our comprehensive QC program includes material verification,
+                weld mapping, pressure testing, and final documentation. We
+                maintain complete traceability from fabrication to installation,
+                ensuring piping system integrity for your critical processes.
+              </p>
+            </div>
           </div>
         </div>
       </section>
