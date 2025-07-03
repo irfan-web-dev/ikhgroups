@@ -13,7 +13,7 @@ export default function PipingSystem() {
           playsInline
           className="hero-video-background"
         >
-          <source src="/videos/piping-system-bg.mp4" type="video/mp4" />
+          <source src="/videos/piping-system.MP4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div className="container hero-container">

@@ -13,7 +13,7 @@ export default function CivilWorkRCCBuildings() {
           playsInline
           className="hero-video-background"
         >
-          <source src="/videos/civil-work-bg.mp4" type="video/mp4" />
+          <source src="/videos/civilwork-rccbuildings.MP4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div className="container hero-container">

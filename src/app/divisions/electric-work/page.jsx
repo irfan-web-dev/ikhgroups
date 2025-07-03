@@ -13,7 +13,7 @@ export default function ElectricWork() {
           playsInline
           className="hero-video-background"
         >
-          <source src="/videos/electric-work-bg.mp4" type="video/mp4" />
+          <source src="/videos/elctric-work.MP4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div className="container hero-container">
