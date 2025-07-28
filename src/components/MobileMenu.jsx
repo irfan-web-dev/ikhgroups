@@ -24,7 +24,12 @@ export default function MobileMenu() {
             </li>
             <li>
               <Link href="/about/president" className="mobile-nav-link">
-                President
+                President MD
+              </Link>
+            </li>
+            <li>
+              <Link href="/about/ceo" className="mobile-nav-link">
+                CEO
               </Link>
             </li>
             <li>
@@ -138,10 +143,15 @@ export default function MobileMenu() {
             </li>
             <li>
               <Link
-                href="/divisions/civil-work-rcc-buildings"
+                href="/divisions/buildings-construction"
                 className="mobile-nav-link"
               >
-                Civil Work & RCC Buildings
+                Buildings Construction
+              </Link>
+            </li>
+            <li>
+              <Link href="/divisions/rcc-buildings" className="mobile-nav-link">
+                RCC Buildings
               </Link>
             </li>
             <li>
@@ -155,14 +165,6 @@ export default function MobileMenu() {
             <li>
               <Link href="/divisions/electric-work" className="mobile-nav-link">
                 Electrical Work
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/divisions/buildings-construction"
-                className="mobile-nav-link"
-              >
-                Buildings Construction
               </Link>
             </li>
             <li>

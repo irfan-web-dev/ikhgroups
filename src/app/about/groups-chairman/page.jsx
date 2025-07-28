@@ -6,26 +6,34 @@ export default function GroupsChairman() {
   return (
     <>
       <section className="hero-section-template">
+        <img
+          className="hero-video-background"
+          src="/images/group-chairman.jpg"
+          alt=""
+        />
         <div className="container hero-container">
-          <div className="hero-text-content floating">
-            <h1 className="animate__animated animate__zoomIn">
+          <div className="hero-text-content">
+            <h1 className="animate__animated animate__zoomInDown">
               Groups Chairman Message
             </h1>
-            <p className="animate__animated animate__fadeIn">
+            <p className="animate__animated animate__fadeInUp">
               Leadership vision and commitment to excellence
             </p>
           </div>
-
-          <LottiePlayer src="https://lottie.host/3026bb24-fafd-4d51-b834-5a0807427982/z82OBhrrPL.lottie" />
         </div>
       </section>
 
       <section className="content-section-template">
-        <div className="content-container-template ">
+        <div className="content-container-template">
           <div className="section-title-template">
             <h2>Chairman's Message</h2>
           </div>
-          <div className="about-content animate-on-scroll slide-up visible">
+
+          <div className="content-animation">
+            <LottiePlayer src="https://lottie.host/3026bb24-fafd-4d51-b834-5a0807427982/z82OBhrrPL.lottie" />
+          </div>
+
+          <div className="content-box-template animate-on-scroll slide-up visible">
             <blockquote className="about-message">
               <p>
                 Today IKHGROUPS has come a long way since its birth, achieving

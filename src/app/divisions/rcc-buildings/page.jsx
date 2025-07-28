@@ -2,7 +2,7 @@
 
 import LottiePlayer from "@/components/LottiePlayer";
 
-export default function CivilWorkRCCBuildings() {
+export default function RCCBuildings() {
   return (
     <>
       <section className="hero-section-template">
@@ -19,12 +19,11 @@ export default function CivilWorkRCCBuildings() {
         <div className="container hero-container">
           <div className="hero-text-content">
             <h1 className="animate__animated animate__zoomInDown">
-              Civil Work & RCC Buildings
+              RCC Buildings
             </h1>
             <p className="animate__animated animate__fadeInUp">
-              Comprehensive civil construction services specializing in
-              Reinforced Cement Concrete (RCC) structures for commercial and
-              industrial projects.
+              Comprehensive Building services specializing in Reinforced Cement
+              Concrete (RCC) structures for commercial and industrial projects.
             </p>
           </div>
         </div>
@@ -33,7 +32,7 @@ export default function CivilWorkRCCBuildings() {
       <section className="content-section-template">
         <div className="content-container-template">
           <div className="section-title-template">
-            <h2>Our Civil Construction Services</h2>
+            <h2>Our RCC Building Services</h2>
           </div>
 
           <div className="content-animation">

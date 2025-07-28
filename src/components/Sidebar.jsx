@@ -24,10 +24,13 @@ export default function Sidebar() {
                 <Link href="/about/groups-chairman">Groups Chairman</Link>
               </li>
               <li>
-                <Link href="/about/president">President</Link>
+                <Link href="/about/president">President MD</Link>
               </li>
               <li>
-                <Link href="/about/general-manager">General manager</Link>
+                <Link href="/about/ceo">CEO</Link>
+              </li>
+              <li>
+                <Link href="/about/general-manager">General Manager</Link>
               </li>
               <li>
                 <Link href="/about/our-staff">Our Staffs</Link>
@@ -99,20 +102,18 @@ export default function Sidebar() {
                 <Link href="/divisions/it-solutions">IT Solutions</Link>
               </li>
               <li>
-                <Link href="/divisions/civil-work-rcc-buildings">
-                  Civil Work & RCC Buildings
+                <Link href="/divisions/buildings-construction">
+                  Buildings Construction
                 </Link>
+              </li>
+              <li>
+                <Link href="/divisions/rcc-buildings">RCC Buildings</Link>
               </li>
               <li>
                 <Link href="/divisions/steel-buildings">Steel Buildings</Link>
               </li>
               <li>
                 <Link href="/divisions/electric-work">Electrical Work</Link>
-              </li>
-              <li>
-                <Link href="/divisions/buildings-construction">
-                  Buildings Construction
-                </Link>
               </li>
               <li>
                 <Link href="/divisions/overhead-telephones-lines">

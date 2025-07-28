@@ -6,17 +6,20 @@ export default function OurVision() {
   return (
     <>
       <section className="hero-section-template">
+        <img
+          className="hero-video-background"
+          src="/images/our-vision.avif"
+          alt=""
+        />
         <div className="container hero-container">
-          <div className="hero-text-content floating">
-            <h1 className="animate__animated animate__fadeInLeft">
+          <div className="hero-text-content">
+            <h1 className="animate__animated animate__zoomInDown">
               Our Vision
             </h1>
-            <p className="animate__animated animate__fadeInRight">
+            <p className="animate__animated animate__fadeInUp">
               Guided growth through integrity and innovation
             </p>
           </div>
-
-          <LottiePlayer src="https://lottie.host/15cd0741-b60d-4bb0-8a10-1822c69e5f4f/PQVbAC58nx.lottie" />
         </div>
       </section>
 
@@ -25,7 +28,12 @@ export default function OurVision() {
           <div className="section-title-template">
             <h2>Our Vision</h2>
           </div>
-          <div className="about-content animate-on-scroll slide-up visible">
+
+          <div className="content-animation">
+            <LottiePlayer src="https://lottie.host/15cd0741-b60d-4bb0-8a10-1822c69e5f4f/PQVbAC58nx.lottie" />
+          </div>
+
+          <div className="content-box-template animate-on-scroll slide-up visible">
             <blockquote className="about-message">
               <p>
                 Our vision guides every aspect of our business by describing
@@ -39,7 +47,7 @@ export default function OurVision() {
                   <li>
                     Never compromise commitments to our employees and clients.
                   </li>
-                  <li>Respond to the clients’ voice.</li>
+                  <li>Respond to the clients' voice.</li>
                   <li>
                     Develop an atmosphere of respect, support and recognition.
                   </li>
@@ -49,7 +57,7 @@ export default function OurVision() {
 
               <div>
                 Our vision for the future is to be identified by Clients and our
-                competitors as the industry’s first choice contractor who
+                competitors as the industry's first choice contractor who
                 always:
                 <ul>
                   <li>

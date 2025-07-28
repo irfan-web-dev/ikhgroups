@@ -80,20 +80,37 @@ export default function DivisionsSection() {
           <div
             className="service-card fade-in-up"
             data-animation="fade-in-up"
+            data-delay="600"
+          >
+            <div className="service-icon">
+              <i className="fas fa-city" />
+            </div>
+            <h3>Buildings Construction</h3>
+            <p>
+              End-to-end building construction services from planning to
+              execution.
+            </p>
+            <Link
+              href="/divisions/buildings-construction"
+              className="service-link"
+            >
+              Learn More <i className="fas fa-arrow-right" />
+            </Link>
+          </div>
+          <div
+            className="service-card fade-in-up"
+            data-animation="fade-in-up"
             data-delay="0"
           >
             <div className="service-icon">
               <i className="fas fa-building" />
             </div>
-            <h3>Civil Work & RCC Buildings</h3>
+            <h3>RCC Buildings</h3>
             <p>
               Expert civil engineering services and reinforced concrete
               construction for durable structures.
             </p>
-            <Link
-              href="/divisions/civil-work-rcc-buildings"
-              className="service-link"
-            >
+            <Link href="/divisions/rcc-buildings" className="service-link">
               Learn More <i className="fas fa-arrow-right" />
             </Link>
           </div>
@@ -131,26 +148,7 @@ export default function DivisionsSection() {
               Learn More <i className="fas fa-arrow-right" />
             </Link>
           </div>
-          <div
-            className="service-card fade-in-up"
-            data-animation="fade-in-up"
-            data-delay="600"
-          >
-            <div className="service-icon">
-              <i className="fas fa-city" />
-            </div>
-            <h3>Buildings Construction</h3>
-            <p>
-              End-to-end building construction services from planning to
-              execution.
-            </p>
-            <Link
-              href="/divisions/buildings-construction"
-              className="service-link"
-            >
-              Learn More <i className="fas fa-arrow-right" />
-            </Link>
-          </div>
+
           <div
             className="service-card fade-in-up"
             data-animation="fade-in-up"

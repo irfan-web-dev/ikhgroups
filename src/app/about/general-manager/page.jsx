@@ -6,17 +6,20 @@ export default function GeneralManager() {
   return (
     <>
       <section className="hero-section-template">
+        <img
+          className="hero-video-background"
+          src="/images/general-manager.webp"
+          alt=""
+        />
         <div className="container hero-container">
-          <div className="hero-text-content floating">
-            <h1 className="animate__animated animate__fadeInLeft">
+          <div className="hero-text-content">
+            <h1 className="animate__animated animate__zoomInDown">
               General Manager's Message
             </h1>
-            <p className="animate__animated animate__fadeInRight">
+            <p className="animate__animated animate__fadeInUp">
               Operational excellence and commitment to quality
             </p>
           </div>
-
-          <LottiePlayer src="https://lottie.host/b5819b3a-1ed5-4d7d-a48f-81d568dcdb57/0lpYS16h8I.lottie" />
         </div>
       </section>
 
@@ -25,8 +28,13 @@ export default function GeneralManager() {
           <div className="section-title-template">
             <h2>From the General Manager</h2>
           </div>
-          <div className="about-content animate-on-scroll visible">
-            <div className="about-message">
+
+          <div className="content-animation">
+            <LottiePlayer src="https://lottie.host/b5819b3a-1ed5-4d7d-a48f-81d568dcdb57/0lpYS16h8I.lottie" />
+          </div>
+
+          <div className="content-box-template animate-on-scroll slide-up visible">
+            <blockquote className="about-message">
               <p>
                 I am delighted to present a Company to you that is 'built to
                 last' and is proud to have continually delivered the right
@@ -80,11 +88,15 @@ export default function GeneralManager() {
                 through the contact page.
               </p>
 
-              <div>
-                <p>AL HUSSAIN SAEID AL MOHTHEL</p>
-                <p>GENERAL MANAGER</p>
+              <div className="signature-block">
+                <p className="closing-line">Best regards,</p>
+                <div className="signature-details">
+                  <p className="person-name">AL HUSSAIN SAEID AL MOHTHEL</p>
+                  <p className="company-name">IKH GROUPS</p>
+                  <p className="signature-title">General Manager</p>
+                </div>
               </div>
-            </div>
+            </blockquote>
           </div>
         </div>
       </section>

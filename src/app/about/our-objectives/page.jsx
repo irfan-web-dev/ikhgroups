@@ -2,21 +2,24 @@
 
 import LottiePlayer from "@/components/LottiePlayer";
 
-export default function OurVision() {
+export default function OurObjectives() {
   return (
     <>
       <section className="hero-section-template">
+        <img
+          className="hero-video-background"
+          src="/images/our-objective.png"
+          alt=""
+        />
         <div className="container hero-container">
-          <div className="hero-text-content floating">
-            <h1 className="animate__animated animate__fadeInLeft">
+          <div className="hero-text-content">
+            <h1 className="animate__animated animate__zoomInDown">
               Our Objectives
             </h1>
-            <p className="animate__animated animate__fadeInRight">
+            <p className="animate__animated animate__fadeInUp">
               Excellence through safety, quality, and responsibility
             </p>
           </div>
-
-          <LottiePlayer src="https://lottie.host/cf349f96-62ab-4051-9478-8cc6ab641002/wZ6qnjV0BO.lottie" />
         </div>
       </section>
 
@@ -25,7 +28,12 @@ export default function OurVision() {
           <div className="section-title-template">
             <h2>Our Objectives</h2>
           </div>
-          <div className="about-content animate-on-scroll  visible">
+
+          <div className="content-animation">
+            <LottiePlayer src="https://lottie.host/cf349f96-62ab-4051-9478-8cc6ab641002/wZ6qnjV0BO.lottie" />
+          </div>
+
+          <div className="content-box-template animate-on-scroll slide-up visible">
             <blockquote className="about-message">
               <p>
                 Our first, and most important, objective is to provide a safe
@@ -51,7 +59,7 @@ export default function OurVision() {
                 provided by the owner, it is our policy to use the best
                 practices and procedures to complete our work in accordance with
                 industry standards. We meet the specifications of the owner
-                without the need for the owner’s representative to generate
+                without the need for the owner's representative to generate
                 lengthy punch lists. The goal is to have no punch list at the
                 end of a project.
               </p>
@@ -64,14 +72,14 @@ export default function OurVision() {
               </p>
 
               <p>
-                IKHGROUPS’s fourth objective is to give the utmost consideration
-                to the owner’s budget. IKHGROUPS managers work to help the owner
+                IKHGROUPS's fourth objective is to give the utmost consideration
+                to the owner's budget. IKHGROUPS managers work to help the owner
                 meet its budget requirements by finding reasonable solutions to
                 budget challenges through value engineering. It is our policy to
-                complete all of our projects at or below IKHGROUPS’s cost
+                complete all of our projects at or below IKHGROUPS's cost
                 budget. By setting the budget, diligently monitoring the actual
                 costs, and identifying budget variances early in the
-                construction process, IKHGROUPS’s management team finds
+                construction process, IKHGROUPS's management team finds
                 solutions to potential cost overruns before they become reality
                 and affect the entire budget. Doing so helps enable IKHGROUPS to
                 manage its projects efficiently so that owners can be assured

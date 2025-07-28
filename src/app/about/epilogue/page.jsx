@@ -6,15 +6,18 @@ export default function Epilogue() {
   return (
     <>
       <section className="hero-section-template">
+        <img
+          className="hero-video-background"
+          src="/images/epilogue.avif"
+          alt=""
+        />
         <div className="container hero-container">
-          <div className="hero-text-content floating">
-            <h1 className="animate__animated animate__fadeInLeft">Epilogue</h1>
-            <p className="animate__animated animate__fadeInRight">
+          <div className="hero-text-content">
+            <h1 className="animate__animated animate__zoomInDown">Epilogue</h1>
+            <p className="animate__animated animate__fadeInUp">
               A reflection on our foundation and future promise
             </p>
           </div>
-
-          <LottiePlayer src="https://lottie.host/b3737b52-a65a-4e92-b20c-f639e9433125/ylH7tAhKdn.lottie" />
         </div>
       </section>
 
@@ -23,7 +26,12 @@ export default function Epilogue() {
           <div className="section-title-template">
             <h2>Our Epilogue</h2>
           </div>
-          <div className="about-content animate-on-scroll  visible">
+
+          <div className="content-animation">
+            <LottiePlayer src="https://lottie.host/b3737b52-a65a-4e92-b20c-f639e9433125/ylH7tAhKdn.lottie" />
+          </div>
+
+          <div className="content-box-template animate-on-scroll slide-up visible">
             <blockquote className="about-message">
               <p>
                 ASIAN STAR FOR IKHGROUPS (IKHGROUPS) operating from Dammam is a
@@ -34,7 +42,7 @@ export default function Epilogue() {
                 have secured the confidence and appreciation from our clients.
                 We have highly qualified & technically skilled categories for
                 Civil, Mechanical & Electrical construction industry along with
-                construction heavy equipment’s.
+                construction heavy equipment's.
               </p>
 
               <p>
@@ -48,7 +56,7 @@ export default function Epilogue() {
 
               <p>
                 If you require any additional information, please feel free to
-                contact
+                contact{" "}
                 <a href="mailto:info@ikhgroups.com">info@ikhgroups.com</a> or
                 IKHGROUPS team for further assistance.
               </p>
@@ -56,7 +64,8 @@ export default function Epilogue() {
               <div className="signature-block">
                 <p className="closing-line">With sincere regards,</p>
                 <div className="signature-details">
-                  <p className="company-name">Imran Khan Tazal Khan</p>
+                  <p className="person-name">Imran Khan Tazal Khan</p>
+                  <p className="company-name">IKH GROUPS</p>
                   <p className="signature-title">
                     Operations Manager
                     <br />

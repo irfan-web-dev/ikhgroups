@@ -6,17 +6,20 @@ export default function OurMission() {
   return (
     <>
       <section className="hero-section-template">
+        <img
+          className="hero-video-background"
+          src="/images/our-mission.jpg"
+          alt=""
+        />
         <div className="container hero-container">
-          <div className="hero-text-content floating">
-            <h1 className="animate__animated animate__fadeInLeft">
+          <div className="hero-text-content">
+            <h1 className="animate__animated animate__zoomInDown">
               Our Mission
             </h1>
-            <p className="animate__animated animate__fadeInRight">
+            <p className="animate__animated animate__fadeInUp">
               Purpose, values, and goals that drive us forward
             </p>
           </div>
-
-          <LottiePlayer src="https://lottie.host/791ca8c6-69b8-4759-9fa1-4d269d0613f0/GNQcAuqZ0T.lottie" />
         </div>
       </section>
 
@@ -25,7 +28,12 @@ export default function OurMission() {
           <div className="section-title-template">
             <h2>Our Mission</h2>
           </div>
-          <div className="about-content animate-on-scroll slide-up visible">
+
+          <div className="content-animation">
+            <LottiePlayer src="https://lottie.host/791ca8c6-69b8-4759-9fa1-4d269d0613f0/GNQcAuqZ0T.lottie" />
+          </div>
+
+          <div className="content-box-template animate-on-scroll slide-up visible">
             <blockquote className="about-message">
               <p>
                 Our mission is to provide our employees with an honest and

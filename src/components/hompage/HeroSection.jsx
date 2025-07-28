@@ -57,7 +57,7 @@ export default function HeroSection() {
         <div className="hero-content">
           <h1 className="hero-title">WELCOME TO,</h1>
           <h2 className="hero-subtitle">IKH GROUPS OF Co.</h2>
-          <p className="hero-text">ASIAN STAR GENERAL CONTRACTING</p>
+          <p className="hero-text">ASIAN STAR GENERAL CONTRACTING CO.</p>
           <button
             onClick={() => {
               const section = document.getElementById("about");

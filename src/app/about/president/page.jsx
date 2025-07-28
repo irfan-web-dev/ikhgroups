@@ -6,27 +6,35 @@ export default function President() {
   return (
     <>
       <section className="hero-section-template">
+        <img
+          className="hero-video-background"
+          src="/images/president.png"
+          alt="President Background"
+        />
         <div className="container hero-container">
-          <div className="hero-text-content floating">
-            <h1 className="animate__animated animate__fadeInDown">
-              President's Message
+          <div className="hero-text-content">
+            <h1 className="animate__animated animate__zoomInDown">
+              President's Managing Director (MD) Message
             </h1>
             <p className="animate__animated animate__fadeInUp">
               Vision and leadership for continued excellence
             </p>
           </div>
-
-          <LottiePlayer src="https://lottie.host/fe02ad22-c0cd-417f-9531-d6dc4c661361/aXKgZCLrOA.lottie" />
         </div>
       </section>
 
       <section className="content-section-template">
         <div className="content-container-template">
           <div className="section-title-template">
-            <h2>From the President's Desk</h2>
+            <h2>From the President's Managing Director (MD) Desk</h2>
           </div>
-          <div className="about-content animate-on-scroll slide-up visible">
-            <div className="about-message">
+
+          <div className="content-animation">
+            <LottiePlayer src="https://lottie.host/fe02ad22-c0cd-417f-9531-d6dc4c661361/aXKgZCLrOA.lottie" />
+          </div>
+
+          <div className="content-box-template animate-on-scroll slide-up visible">
+            <blockquote className="about-message">
               <p>
                 At the outset, we feel privileged and proud to serve the entire
                 Middle East as a premier General Construction Contractor &
@@ -67,13 +75,11 @@ export default function President() {
               <div className="signature-block">
                 <p className="thank-you">Thank You!</p>
                 <div className="signature-details">
-                  <p className="president-name">
-                    Abdur Rahaman Abdul Aziz Abdullah Al Humam
-                  </p>
-                  <p className="signature-title">President</p>
+                  <p className="president-name">Engr. Kamrul Islam</p>
+                  <p className="signature-title">President MD</p>
                 </div>
               </div>
-            </div>
+            </blockquote>
           </div>
         </div>
       </section>
