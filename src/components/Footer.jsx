@@ -71,16 +71,6 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="#projects" className="footer-link">
-                  <i className="fas fa-chevron-right" /> Projects
-                </Link>
-              </li>
-              <li>
-                <Link href="#gallery" className="footer-link">
-                  <i className="fas fa-chevron-right" /> Gallery
-                </Link>
-              </li>
-              <li>
                 <Link href="/contact" className="footer-link">
                   <i className="fas fa-chevron-right" /> Contact
                 </Link>

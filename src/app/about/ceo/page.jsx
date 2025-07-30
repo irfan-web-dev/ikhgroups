@@ -59,7 +59,7 @@ export default function CEO() {
                 <p className="closing-line">With best regards,</p>
                 <div className="signature-details">
                   <p className="person-name">E.H. EMAM HUSSAIN</p>
-                  <p className="company-name">IKH GROUPS</p>
+                  {/* <p className="company-name">IKH GROUPS</p> */}
                   <p className="signature-title">Chief Executive Officer</p>
                 </div>
               </div>

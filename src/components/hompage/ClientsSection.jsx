@@ -37,6 +37,9 @@ const clientLogos = [
   "https://images.seeklogo.com/logo-png/31/1/maaden-logo-png_seeklogo-316199.png",
   "https://images.seeklogo.com/logo-png/54/1/satorp-logo-png_seeklogo-544812.png",
   "https://images.seeklogo.com/logo-png/4/1/esb-logo-png_seeklogo-48822.png",
+  "https://images.seeklogo.com/logo-png/0/1/applus-logo-png_seeklogo-9881.png",
+  "https://media.licdn.com/dms/image/v2/C4E0BAQFLGxUFfdwGHw/company-logo_200_200/company-logo_200_200/0/1630604527863?e=2147483647&v=beta&t=HOCr37yjNWKPKbAshdo_cybqtGuxhx18xePCgJMtUzY",
+  "https://images.seeklogo.com/logo-png/30/1/alfanar-logo-png_seeklogo-304076.png",
 ];
 
 export default function ClientsSection() {

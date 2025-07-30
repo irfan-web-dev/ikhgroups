@@ -7,6 +7,16 @@ export default function Divisions() {
   return (
     <>
       <section className="hero-section-template">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="hero-video-background"
+        >
+          <source src="/videos/mechanical-work.MP4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
         <div className="container hero-container">
           <div className="hero-text-content floating">
             <h1 className="animate__animated animate__zoomInDown">Divisions</h1>
@@ -17,8 +27,6 @@ export default function Divisions() {
               diverse industry needs.
             </p>
           </div>
-
-          <LottiePlayer src="https://lottie.host/2913ce57-168a-47cf-b8f9-a1943ff8c426/Dz4nYaDUAT.lottie" />
         </div>
       </section>
 

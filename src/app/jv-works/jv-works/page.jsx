@@ -2,20 +2,23 @@
 
 import LottiePlayer from "@/components/LottiePlayer";
 
-export default function Works() {
+export default function JVWorks() {
   return (
     <>
       <section className="hero-section-template">
+        <img
+          className="hero-video-background"
+          src="/images/group-chairman.jpg"
+          alt=""
+        />
         <div className="container hero-container">
           <div className="hero-text-content floating">
-            <h1 className="animate__animated animate__zoomInDown">Works</h1>
+            <h1 className="animate__animated animate__zoomInDown">JV Works</h1>
             <p className="animate__animated animate__fadeInUp">
               Comprehensive services and solutions through our strategic
               partnerships
             </p>
           </div>
-
-          <LottiePlayer src="https://lottie.host/a9e8893a-ee8a-4231-a6a2-30683b767424/aHbKYF0qY8.lottie" />
         </div>
       </section>
 
@@ -24,6 +27,11 @@ export default function Works() {
           <div className="section-title-template">
             <h2>Our Services</h2>
           </div>
+
+          <div className="content-animation">
+            <LottiePlayer src="https://lottie.host/a9e8893a-ee8a-4231-a6a2-30683b767424/aHbKYF0qY8.lottie" />
+          </div>
+
           <div className="services-grid animate-on-scroll slide-up visible">
             <div className="service-card">
               <div className="service-icon">

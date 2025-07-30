@@ -1,3 +1,28 @@
+.jv-item {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.jv-item:hover {
+  background-color: #f0f0f0;
+  transform: translateX(5px);
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 20px;
+  color: #db7604;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.back-link:hover {
+  color: #f97316;
+  text-decoration: underline;
+}
+
+/* Keep all your existing styles */
 .jv-content-wrapper {
   display: flex;
   gap: 40px;

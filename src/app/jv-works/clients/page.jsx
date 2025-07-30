@@ -8,6 +8,11 @@ export default function Clients() {
   return (
     <>
       <section className="hero-section-template">
+        <img
+          className="hero-video-background"
+          src="/images/group-chairman.jpg"
+          alt=""
+        />
         <div className="container hero-container">
           <div className="hero-text-content floating">
             <h1 className="animate__animated animate__zoomInDown">
@@ -17,8 +22,6 @@ export default function Clients() {
               Trusted partnerships with industry leaders across multiple sectors
             </p>
           </div>
-
-          <LottiePlayer src="https://lottie.host/a0bab21e-612c-42db-b9e9-4787e76b3fbc/to0JiF8gl2.lottie" />
         </div>
       </section>
 
@@ -27,6 +30,11 @@ export default function Clients() {
           <div className="section-title-template">
             <h2>Our Valued Clients</h2>
           </div>
+
+          <div className="content-animation">
+            <LottiePlayer src="https://lottie.host/a0bab21e-612c-42db-b9e9-4787e76b3fbc/to0JiF8gl2.lottie" />
+          </div>
+
           <div className="content-box-template animate-on-scroll slide-up visible">
             <p>
               Clients are the key stakeholders at IKHGROUPS. We have an

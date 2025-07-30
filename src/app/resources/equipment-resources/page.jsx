@@ -7,6 +7,16 @@ export default function EquipmentResources() {
   return (
     <>
       <section className="hero-section-template">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="hero-video-background"
+        >
+          <source src="/videos/equipment-resourses.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
         <div className="container hero-container">
           <div className="hero-text-content floating">
             <h1 className="animate__animated animate__zoomInDown">
@@ -18,8 +28,6 @@ export default function EquipmentResources() {
               or small.
             </p>
           </div>
-
-          <LottiePlayer src="https://lottie.host/ab82bba8-130b-4873-9624-52d26f2528de/7qnhvYd6KP.lottie" />
         </div>
       </section>
 
@@ -28,6 +36,11 @@ export default function EquipmentResources() {
           <div className="section-title-template">
             <h2>Our Equipment Inventory</h2>
           </div>
+
+          <div className="content-animation">
+            <LottiePlayer src="https://lottie.host/ab82bba8-130b-4873-9624-52d26f2528de/7qnhvYd6KP.lottie" />
+          </div>
+
           <p className="intro-text">
             We maintain a comprehensive fleet of modern construction equipment
             to meet all project requirements.

@@ -65,9 +65,10 @@ export default function Epilogue() {
                 <p className="closing-line">With sincere regards,</p>
                 <div className="signature-details">
                   <p className="person-name">Imran Khan Tazal Khan</p>
-                  <p className="company-name">IKH GROUPS</p>
+                  {/* <p className="company-name">IKH GROUPS</p> */}
                   <p className="signature-title">
                     Operations Manager
+                    <br />
                     <br />
                     ASIAN STAR FOR IKHGROUPS
                   </p>

@@ -23,8 +23,8 @@ export default function MobileMenu() {
               </Link>
             </li>
             <li>
-              <Link href="/about/president" className="mobile-nav-link">
-                President MD
+              <Link href="/about/managing-director" className="mobile-nav-link">
+                Managing Director (MD)
               </Link>
             </li>
             <li>
@@ -83,8 +83,8 @@ export default function MobileMenu() {
               </Link>
             </li>
             <li>
-              <Link href="/jv-works/works" className="mobile-nav-link">
-                Works
+              <Link href="/jv-works/jv-works" className="mobile-nav-link">
+                JV Works
               </Link>
             </li>
             <li>

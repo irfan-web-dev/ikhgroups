@@ -48,6 +48,16 @@ export default function Contact() {
   return (
     <>
       <section className="hero-section-template">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="hero-video-background"
+        >
+          <source src="/videos/contact-us.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
         <div className="container hero-container">
           <div className="hero-text-content floating">
             <h1 className="animate__animated animate__fadeInDown">
@@ -67,12 +77,14 @@ export default function Contact() {
               Send Message <i className="fas fa-paper-plane" />
             </button>
           </div>
-
-          <LottiePlayer src="https://lottie.host/f3f39cf3-a512-49a9-9094-5e33f5e99654/8H97tqqugD.lottie" />
         </div>
       </section>
 
       <div className="contact-container">
+        <div className="content-animation">
+          <LottiePlayer src="https://lottie.host/f3f39cf3-a512-49a9-9094-5e33f5e99654/8H97tqqugD.lottie" />
+        </div>
+
         <div className="contact-info-section">
           <h2 className="contact-section-title">Our Contact Information</h2>
           <p className="contact-description">

@@ -89,7 +89,7 @@ export default function OurVision() {
               <div className="signature-block">
                 <p className="closing-line">With clarity and purpose,</p>
                 <div className="signature-details">
-                  <p className="company-name">IKH GROUPS</p>
+                  {/* <p className="company-name">IKH GROUPS</p> */}
                   <p className="signature-title">Vision Statement</p>
                 </div>
               </div>

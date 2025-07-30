@@ -6,6 +6,16 @@ export default function SheManagement() {
   return (
     <>
       <section className="hero-section-template">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="hero-video-background"
+        >
+          <source src="/videos/she-management.mov" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
         <div className="container hero-container">
           <div className="hero-text-content floating">
             <h1 className="animate__animated animate__zoomInDown">
@@ -17,8 +27,6 @@ export default function SheManagement() {
               practices.
             </p>
           </div>
-
-          <LottiePlayer src="https://lottie.host/e1df25b0-6dd4-4972-84d7-b5641a90cccc/0dpp7iKq7i.lottie" />
         </div>
       </section>
 
@@ -27,6 +35,11 @@ export default function SheManagement() {
           <div className="section-title-template">
             <h2>Our SHE Commitment</h2>
           </div>
+
+          <div className="content-animation">
+            <LottiePlayer src="https://lottie.host/e1df25b0-6dd4-4972-84d7-b5641a90cccc/0dpp7iKq7i.lottie" />
+          </div>
+
           <div className="content-box-template animate-on-scroll slide-up visible">
             <p>
               The company recognizes that high standards of health, safety and

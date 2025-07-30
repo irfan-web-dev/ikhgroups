@@ -48,16 +48,16 @@ export default function OurStaff() {
               </div>
             </div>
 
-            {/* President MD */}
+            {/* MD */}
             <div className="staff-card">
               <div className="staff-image-wrapper">
                 <div className="staff-image">
-                  <img src="/images/staff-md.jpeg" alt="president MD" />
+                  <img src="/images/staff-md.jpeg" alt="MD" />
                 </div>
               </div>
               <div className="staff-details">
                 <h3>Engr. Kamrul Islam</h3>
-                <p>PRESIDENT Managing Director</p>
+                <p>Managing Director</p>
               </div>
             </div>
 
@@ -247,6 +247,22 @@ export default function OurStaff() {
               <div className="staff-details">
                 <h3>Jamil Hussain</h3>
                 <p>⁠Logistic Incharge </p>
+              </div>
+            </div>
+
+            {/* Civil Engr.  */}
+            <div className="staff-card">
+              <div className="staff-image-wrapper">
+                <div className="staff-image">
+                  <img
+                    src="/images/staff-civil-engr.jpeg"
+                    alt="Jamil Hussain"
+                  />
+                </div>
+              </div>
+              <div className="staff-details">
+                <h3>Md. Monir Hossain </h3>
+                <p>Civil Engr.</p>
               </div>
             </div>
           </div>

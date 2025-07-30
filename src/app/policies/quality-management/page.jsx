@@ -6,6 +6,16 @@ export default function QualityManagement() {
   return (
     <>
       <section className="hero-section-template">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="hero-video-background"
+        >
+          <source src="/videos/quality-management.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
         <div className="container hero-container">
           <div className="hero-text-content floating">
             <h1 className="animate__animated animate__zoomInDown">
@@ -17,8 +27,6 @@ export default function QualityManagement() {
               management systems and processes.
             </p>
           </div>
-
-          <LottiePlayer src="https://lottie.host/e213f05b-bdd5-4c48-87f7-65055181c883/xTxDglfvzS.lottie" />
         </div>
       </section>
 
@@ -27,6 +35,11 @@ export default function QualityManagement() {
           <div className="section-title-template">
             <h2>Our Quality Commitment</h2>
           </div>
+
+          <div className="content-animation">
+            <LottiePlayer src="https://lottie.host/e213f05b-bdd5-4c48-87f7-65055181c883/xTxDglfvzS.lottie" />
+          </div>
+
           <div className="content-box-template animate-on-scroll slide-up visible">
             <h3>Quality Management System</h3>
             <p>

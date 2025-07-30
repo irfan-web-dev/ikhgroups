@@ -7,6 +7,11 @@ export default function OngoingProjects() {
   return (
     <>
       <section className="hero-section-template">
+        <img
+          className="hero-video-background"
+          src="/images/group-chairman.jpg"
+          alt=""
+        />
         <div className="container hero-container">
           <div className="hero-text-content floating">
             <h1 className="animate__animated animate__zoomInDown">
@@ -16,8 +21,6 @@ export default function OngoingProjects() {
               Our current and upcoming projects showcasing our continuous growth
             </p>
           </div>
-
-          <LottiePlayer src="https://lottie.host/bd546e6b-6763-459e-a132-e3c68ad51b44/NsegJVScne.lottie" />
         </div>
       </section>
 
@@ -26,6 +29,11 @@ export default function OngoingProjects() {
           <div className="section-title-template">
             <h2>Our Current Projects</h2>
           </div>
+
+          <div className="content-animation">
+            <LottiePlayer src="https://lottie.host/bd546e6b-6763-459e-a132-e3c68ad51b44/NsegJVScne.lottie" />
+          </div>
+
           <div className="projects-table-container animate-on-scroll slide-up visible">
             <table className="projects-table">
               <thead>

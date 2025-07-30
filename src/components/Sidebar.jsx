@@ -24,7 +24,9 @@ export default function Sidebar() {
                 <Link href="/about/groups-chairman">Groups Chairman</Link>
               </li>
               <li>
-                <Link href="/about/president">President MD</Link>
+                <Link href="/about/managing-director">
+                  Managing Director (MD)
+                </Link>
               </li>
               <li>
                 <Link href="/about/ceo">CEO</Link>
@@ -65,7 +67,7 @@ export default function Sidebar() {
                 <Link href="/jv-works/joint-ventures">Joint Ventures</Link>
               </li>
               <li>
-                <Link href="/jv-works/works">Works</Link>
+                <Link href="/jv-works/jv-works">JV Works</Link>
               </li>
               <li>
                 <Link href="/jv-works/completed-projects">

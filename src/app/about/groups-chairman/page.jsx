@@ -62,7 +62,7 @@ export default function GroupsChairman() {
               <div className="signature-block">
                 <p className="closing-line">Onwards and upwards,</p>
                 <div className="signature-details">
-                  <p className="company-name">IKH GROUPS</p>
+                  <p className="company-name">OVE Laskar</p>
                   <p className="signature-title">Groups Chairman</p>
                 </div>
               </div>

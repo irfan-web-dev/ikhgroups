@@ -92,7 +92,7 @@ export default function GeneralManager() {
                 <p className="closing-line">Best regards,</p>
                 <div className="signature-details">
                   <p className="person-name">AL HUSSAIN SAEID AL MOHTHEL</p>
-                  <p className="company-name">IKH GROUPS</p>
+                  {/* <p className="company-name">IKH GROUPS</p> */}
                   <p className="signature-title">General Manager</p>
                 </div>
               </div>

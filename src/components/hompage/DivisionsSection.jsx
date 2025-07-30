@@ -1,247 +1,195 @@
+"use client";
 import Link from "next/link";
+import LottiePlayer from "@/components/LottiePlayer";
 
 export default function DivisionsSection() {
   return (
-    <section className="section services-section visible" id="services">
-      <div className="container">
+    <section
+      className="section services-section visible"
+      id="services"
+      style={{ position: "relative" }}
+    >
+      {/* Background Logo */}
+      <div
+        style={{
+          position: "absolute",
+          top: "50%",
+          left: "50%",
+          transform: "translate(-50%, -50%)",
+          width: "50%",
+          height: "50%",
+          zIndex: 0,
+          opacity: 0.05,
+          backgroundImage: "url(/images/bg-logo.png)",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+          backgroundSize: "contain",
+          pointerEvents: "none",
+        }}
+      ></div>
+
+      {/* Background Pattern */}
+      <div
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100%",
+          background:
+            "linear-gradient(185deg, rgba(249, 115, 22, 0.03) 0%, rgba(249, 115, 22, 0.01) 50%, rgba(255, 255, 255, 1) 100%)",
+          zIndex: 0,
+        }}
+      ></div>
+
+      <div className="container" style={{ position: "relative", zIndex: 1 }}>
         <div className="section-title">
           <h2>Our Divisions</h2>
-          <p>Comprehensive Services Across Multiple Sectors</p>
+          <p style={{ marginTop: "20px" }}>
+            Comprehensive Services Across Multiple Sectors
+          </p>
         </div>
-        <div className="services">
-          <div
-            className="service-card fade-in-up"
-            data-animation="fade-in-up"
-            data-delay="0"
-          >
-            <div className="service-icon">
-              <i className="fas fa-industry" />
-            </div>
-            <h3>Construction</h3>
-            <p>
-              Specializing in industrial, commercial, and residential projects
-              with a focus on quality and safety.
-            </p>
-            <Link href="/divisions/construction" className="service-link">
-              Learn More <i className="fas fa-arrow-right" />
-            </Link>
-          </div>
-          <div
-            className="service-card fade-in-up"
-            data-animation="fade-in-up"
-            data-delay="200"
-          >
-            <div className="service-icon">
-              <i className="fas fa-cogs" />
-            </div>
-            <h3>Support Services</h3>
-            <p>
-              Providing essential support services to ensure seamless project
-              execution and maintenance.
-            </p>
-            <Link href="/divisions/support-services" className="service-link">
-              Learn More <i className="fas fa-arrow-right" />
-            </Link>
-          </div>
-          <div
-            className="service-card fade-in-up"
-            data-animation="fade-in-up"
-            data-delay="400"
-          >
-            <div className="service-icon">
-              <i className="fas fa-snowflake" />
-            </div>
-            <h3>HVAC Services</h3>
-            <p>
-              Delivering efficient heating, ventilation, and air conditioning
-              solutions for diverse environments.
-            </p>
-            <Link href="/divisions/hvac-services" className="service-link">
-              Learn More <i className="fas fa-arrow-right" />
-            </Link>
-          </div>
-          <div
-            className="service-card fade-in-up"
-            data-animation="fade-in-up"
-            data-delay="600"
-          >
-            <div className="service-icon">
-              <i className="fas fa-desktop" />
-            </div>
-            <h3>IT Solutions</h3>
-            <p>
-              Implementing cutting-edge technology solutions to optimize
-              operations and enhance digital infrastructure.
-            </p>
-            <Link href="/divisions/it-solutions" className="service-link">
-              Learn More <i className="fas fa-arrow-right" />
-            </Link>
-          </div>
-          <div
-            className="service-card fade-in-up"
-            data-animation="fade-in-up"
-            data-delay="600"
-          >
-            <div className="service-icon">
-              <i className="fas fa-city" />
-            </div>
-            <h3>Buildings Construction</h3>
-            <p>
-              End-to-end building construction services from planning to
-              execution.
-            </p>
-            <Link
-              href="/divisions/buildings-construction"
-              className="service-link"
-            >
-              Learn More <i className="fas fa-arrow-right" />
-            </Link>
-          </div>
-          <div
-            className="service-card fade-in-up"
-            data-animation="fade-in-up"
-            data-delay="0"
-          >
-            <div className="service-icon">
-              <i className="fas fa-building" />
-            </div>
-            <h3>RCC Buildings</h3>
-            <p>
-              Expert civil engineering services and reinforced concrete
-              construction for durable structures.
-            </p>
-            <Link href="/divisions/rcc-buildings" className="service-link">
-              Learn More <i className="fas fa-arrow-right" />
-            </Link>
-          </div>
-          <div
-            className="service-card fade-in-up"
-            data-animation="fade-in-up"
-            data-delay="200"
-          >
-            <div className="service-icon">
-              <i className="fas fa-chess-rook" />
-            </div>
-            <h3>Steel Buildings</h3>
-            <p>
-              High-quality steel structure design and construction for
-              industrial and commercial applications.
-            </p>
-            <Link href="/divisions/steel-buildings" className="service-link">
-              Learn More <i className="fas fa-arrow-right" />
-            </Link>
-          </div>
-          <div
-            className="service-card fade-in-up"
-            data-animation="fade-in-up"
-            data-delay="400"
-          >
-            <div className="service-icon">
-              <i className="fas fa-bolt" />
-            </div>
-            <h3>Electrical Work</h3>
-            <p>
-              Comprehensive electrical solutions including wiring,
-              installations, and maintenance services.
-            </p>
-            <Link href="divisions/electric-work" className="service-link">
-              Learn More <i className="fas fa-arrow-right" />
-            </Link>
-          </div>
 
-          <div
-            className="service-card fade-in-up"
-            data-animation="fade-in-up"
-            data-delay="0"
-          >
-            <div className="service-icon">
-              <i className="fas fa-tower-broadcast" />
-            </div>
-            <h3>Overhead & Telephone Lines</h3>
-            <p>
-              Professional installation and maintenance of overhead power and
-              telephone line systems.
-            </p>
-            <Link
-              href="/divisions/overhead-telephones-lines"
-              className="service-link"
-            >
-              Learn More <i className="fas fa-arrow-right" />
-            </Link>
-          </div>
-          <div
-            className="service-card fade-in-up"
-            data-animation="fade-in-up"
-            data-delay="200"
-          >
-            <div className="service-icon">
-              <i className="fas fa-tools" />
-            </div>
-            <h3>Mechanical Work</h3>
-            <p>
-              Mechanical engineering services including equipment installation
-              and maintenance.
-            </p>
-            <Link href="/divisions/mechanical-work" className="service-link">
-              Learn More <i className="fas fa-arrow-right" />
-            </Link>
-          </div>
-          <div
-            className="service-card fade-in-up"
-            data-animation="fade-in-up"
-            data-delay="400"
-          >
-            <div className="service-icon">
-              <i className="fas fa-oil-well" />
-            </div>
-            <h3>Piping Systems</h3>
-            <p>
-              Design, installation, and maintenance of efficient piping systems
-              for various applications.
-            </p>
-            <Link href="/divisions/piping-system" className="service-link">
-              Learn More <i className="fas fa-arrow-right" />
-            </Link>
-          </div>
-          <div
-            className="service-card fade-in-up"
-            data-animation="fade-in-up"
-            data-delay="600"
-          >
-            <div className="service-icon">
-              <i className="fas fa-fire-extinguisher" />
-            </div>
-            <h3>Fire Protection Systems</h3>
-            <p>
-              Complete firefighting solutions including sprinkler systems,
-              alarms, and fireproofing.
-            </p>
-            <Link
-              href="/divisions/fire-protection-systems"
-              className="service-link"
-            >
-              Learn More <i className="fas fa-arrow-right" />
-            </Link>
-          </div>
-          <div
-            className="service-card fade-in-up"
-            data-animation="fade-in-up"
-            data-delay="0"
-          >
-            <div className="service-icon">
-              <i className="fas fa-paint-roller" />
-            </div>
-            <h3>Painting Work</h3>
-            <p>
-              Professional painting services for industrial, commercial, and
-              residential properties.
-            </p>
-            <Link href="/divisions/painting-work" className="service-link">
-              Learn More <i className="fas fa-arrow-right" />
-            </Link>
-          </div>
+        <div className="content-animation">
+          <LottiePlayer src="https://lottie.host/2913ce57-168a-47cf-b8f9-a1943ff8c426/Dz4nYaDUAT.lottie" />
+        </div>
+
+        <div className="services">
+          {divisions.map((division, index) => (
+            <ServiceCard
+              key={division.id}
+              division={division}
+              delay={index * 100}
+            />
+          ))}
         </div>
       </div>
     </section>
+  );
+}
+
+const divisions = [
+  {
+    id: 1,
+    title: "Construction",
+    icon: "fa-industry",
+    description:
+      "Specializing in industrial, commercial, and residential projects with a focus on quality and safety.",
+    link: "/divisions/construction",
+  },
+  {
+    id: 2,
+    title: "Support Services",
+    icon: "fa-cogs",
+    description:
+      "Providing essential support services to ensure seamless project execution and maintenance.",
+    link: "/divisions/support-services",
+  },
+  {
+    id: 3,
+    title: "HVAC Services",
+    icon: "fa-snowflake",
+    description:
+      "Delivering efficient heating, ventilation, and air conditioning solutions for diverse environments.",
+    link: "/divisions/hvac-services",
+  },
+  {
+    id: 4,
+    title: "IT Solutions",
+    icon: "fa-desktop",
+    description:
+      "Implementing cutting-edge technology solutions to optimize operations and enhance digital infrastructure.",
+    link: "/divisions/it-solutions",
+  },
+  {
+    id: 5,
+    title: "Buildings Construction",
+    icon: "fa-city",
+    description:
+      "End-to-end building construction services from planning to execution.",
+    link: "/divisions/buildings-construction",
+  },
+  {
+    id: 6,
+    title: "RCC Buildings",
+    icon: "fa-building",
+    description:
+      "Expert civil engineering services and reinforced concrete construction for durable structures.",
+    link: "/divisions/rcc-buildings",
+  },
+  {
+    id: 7,
+    title: "Steel Buildings",
+    icon: "fa-chess-rook",
+    description:
+      "High-quality steel structure design and construction for industrial and commercial applications.",
+    link: "/divisions/steel-buildings",
+  },
+  {
+    id: 8,
+    title: "Electrical Work",
+    icon: "fa-bolt",
+    description:
+      "Comprehensive electrical solutions including wiring, installations, and maintenance services.",
+    link: "/divisions/electric-work",
+  },
+  {
+    id: 9,
+    title: "Overhead & Telephone Lines",
+    icon: "fa-tower-broadcast",
+    description:
+      "Professional installation and maintenance of overhead power and telephone line systems.",
+    link: "/divisions/overhead-telephones-lines",
+  },
+  {
+    id: 10,
+    title: "Mechanical Work",
+    icon: "fa-tools",
+    description:
+      "Mechanical engineering services including equipment installation and maintenance.",
+    link: "/divisions/mechanical-work",
+  },
+  {
+    id: 11,
+    title: "Piping Systems",
+    icon: "fa-oil-well",
+    description:
+      "Design, installation, and maintenance of efficient piping systems for various applications.",
+    link: "/divisions/piping-system",
+  },
+  {
+    id: 12,
+    title: "Fire Protection Systems",
+    icon: "fa-fire-extinguisher",
+    description:
+      "Complete firefighting solutions including sprinkler systems, alarms, and fireproofing.",
+    link: "/divisions/fire-protection-systems",
+  },
+  {
+    id: 13,
+    title: "Painting Work",
+    icon: "fa-paint-roller",
+    description:
+      "Professional painting services for industrial, commercial, and residential properties.",
+    link: "/divisions/painting-work",
+  },
+];
+
+function ServiceCard({ division, delay }) {
+  return (
+    <div
+      className="service-card fade-in-up"
+      data-animation="fade-in-up"
+      data-delay={delay}
+    >
+      <div className="service-icon">
+        <i className={`fas ${division.icon}`} />
+      </div>
+      <h3>{division.title}</h3>
+      <p>{division.description}</p>
+      <Link href={division.link} className="service-link">
+        Learn More <i className="fas fa-arrow-right" />
+      </Link>
+    </div>
   );
 }

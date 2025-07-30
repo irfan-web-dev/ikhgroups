@@ -2,7 +2,7 @@
 
 import LottiePlayer from "@/components/LottiePlayer";
 
-export default function President() {
+export default function ManagingDirector() {
   return (
     <>
       <section className="hero-section-template">
@@ -14,7 +14,7 @@ export default function President() {
         <div className="container hero-container">
           <div className="hero-text-content">
             <h1 className="animate__animated animate__zoomInDown">
-              President's Managing Director (MD) Message
+              Managing Director(MD) Message
             </h1>
             <p className="animate__animated animate__fadeInUp">
               Vision and leadership for continued excellence
@@ -26,7 +26,7 @@ export default function President() {
       <section className="content-section-template">
         <div className="content-container-template">
           <div className="section-title-template">
-            <h2>From the President's Managing Director (MD) Desk</h2>
+            <h2>From the Managing Director (MD) Desk</h2>
           </div>
 
           <div className="content-animation">
@@ -76,7 +76,7 @@ export default function President() {
                 <p className="thank-you">Thank You!</p>
                 <div className="signature-details">
                   <p className="president-name">Engr. Kamrul Islam</p>
-                  <p className="signature-title">President MD</p>
+                  <p className="signature-title">Managing Director (MD)</p>
                 </div>
               </div>
             </blockquote>

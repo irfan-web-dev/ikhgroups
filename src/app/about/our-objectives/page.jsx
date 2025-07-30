@@ -89,7 +89,7 @@ export default function OurObjectives() {
               <div className="signature-block">
                 <p className="closing-line">With commitment and precision,</p>
                 <div className="signature-details">
-                  <p className="company-name">IKH GROUPS</p>
+                  {/* <p className="company-name">IKH GROUPS</p> */}
                   <p className="signature-title">Objective Statement</p>
                 </div>
               </div>

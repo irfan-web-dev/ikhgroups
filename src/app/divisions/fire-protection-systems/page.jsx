@@ -13,7 +13,7 @@ export default function FireProtectionSystems() {
           playsInline
           className="hero-video-background"
         >
-          <source src="/videos/fire-protection.mp4" type="video/mp4" />
+          <source src="/videos/fire-protection.mov" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div className="container hero-container">

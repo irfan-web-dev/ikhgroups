@@ -78,7 +78,7 @@ export default function OurMission() {
               <div className="signature-block">
                 <p className="closing-line">Committed with vision,</p>
                 <div className="signature-details">
-                  <p className="company-name">IKH GROUPS</p>
+                  {/* <p className="company-name">IKH GROUPS</p> */}
                   <p className="signature-title">Our Mission</p>
                 </div>
               </div>

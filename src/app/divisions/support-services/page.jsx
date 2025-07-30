@@ -13,7 +13,7 @@ export default function SupportServices() {
           playsInline
           className="hero-video-background"
         >
-          <source src="/videos/support-services-bg.mp4" type="video/mp4" />
+          <source src="/videos/support-services.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div className="container hero-container">

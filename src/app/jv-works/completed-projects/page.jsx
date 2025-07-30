@@ -3,10 +3,15 @@ import "./completed-projects.css";
 
 import LottiePlayer from "@/components/LottiePlayer";
 
-export default function Works() {
+export default function CompletedProjects() {
   return (
     <>
       <section className="hero-section-template">
+        <img
+          className="hero-video-background"
+          src="/images/group-chairman.jpg"
+          alt=""
+        />
         <div className="container hero-container">
           <div className="hero-text-content floating">
             <h1 className="animate__animated animate__zoomInDown">
@@ -17,8 +22,6 @@ export default function Works() {
               industries
             </p>
           </div>
-
-          <LottiePlayer src="https://lottie.host/1122ad5c-b8b3-4bd1-807f-078947d6c0d6/lNVTeSg7pp.lottie" />
         </div>
       </section>
 
@@ -27,6 +30,11 @@ export default function Works() {
           <div className="section-title-template">
             <h2>Our Project Portfolio</h2>
           </div>
+
+          <div className="content-animation">
+            <LottiePlayer src="https://lottie.host/1122ad5c-b8b3-4bd1-807f-078947d6c0d6/lNVTeSg7pp.lottie" />
+          </div>
+
           <div className="projects-table-container animate-on-scroll slide-up visible">
             <table className="projects-table">
               <thead>

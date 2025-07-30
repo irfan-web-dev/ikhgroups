@@ -7,6 +7,16 @@ export default function ManpowerResources() {
   return (
     <>
       <section className="hero-section-template">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="hero-video-background"
+        >
+          <source src="/videos/manpower-resourses.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
         <div className="container hero-container">
           <div className="hero-text-content floating">
             <h1 className="animate__animated animate__zoomInDown">
@@ -18,8 +28,6 @@ export default function ManpowerResources() {
               every time.
             </p>
           </div>
-
-          <LottiePlayer src="https://lottie.host/13c8d285-fdc0-44f6-bf8f-057d7488aae8/GnBkHM3Kq3.lottie" />
         </div>
       </section>
 
@@ -28,6 +36,11 @@ export default function ManpowerResources() {
           <div className="section-title-template">
             <h2>Our Workforce in Action</h2>
           </div>
+
+          <div className="content-animation">
+            <LottiePlayer src="https://lottie.host/13c8d285-fdc0-44f6-bf8f-057d7488aae8/GnBkHM3Kq3.lottie" />
+          </div>
+
           <p className="intro-text">
             Our dedicated team of professionals brings expertise and commitment
             to every project.
