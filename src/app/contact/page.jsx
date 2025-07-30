@@ -80,11 +80,10 @@ export default function Contact() {
         </div>
       </section>
 
+      <div className="content-animation">
+        <LottiePlayer src="https://lottie.host/f3f39cf3-a512-49a9-9094-5e33f5e99654/8H97tqqugD.lottie" />
+      </div>
       <div className="contact-container">
-        <div className="content-animation">
-          <LottiePlayer src="https://lottie.host/f3f39cf3-a512-49a9-9094-5e33f5e99654/8H97tqqugD.lottie" />
-        </div>
-
         <div className="contact-info-section">
           <h2 className="contact-section-title">Our Contact Information</h2>
           <p className="contact-description">
