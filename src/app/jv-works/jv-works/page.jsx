@@ -6,11 +6,16 @@ export default function JVWorks() {
   return (
     <>
       <section className="hero-section-template">
-        <img
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
           className="hero-video-background"
-          src="/images/group-chairman.jpg"
-          alt=""
-        />
+        >
+          <source src="/videos/jv-works.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
         <div className="container hero-container">
           <div className="hero-text-content floating">
             <h1 className="animate__animated animate__zoomInDown">JV Works</h1>

@@ -33,8 +33,35 @@ export default function OurObjectives() {
             <LottiePlayer src="https://lottie.host/cf349f96-62ab-4051-9478-8cc6ab641002/wZ6qnjV0BO.lottie" />
           </div>
 
-          <div className="content-box-template animate-on-scroll slide-up visible">
-            <blockquote className="about-message">
+          <div
+            className="content-box-template animate-on-scroll slide-up visible"
+            style={{ position: "relative" }}
+          >
+            {/* Centered background logo */}
+            <div
+              style={{
+                position: "absolute",
+                top: "50%",
+                left: "50%",
+                transform: "translate(-50%, -50%)",
+                width: "50%",
+                height: "50%",
+                zIndex: 0,
+                opacity: 0.1,
+                backgroundImage: "url(/images/bg-logo.png)",
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "center",
+                backgroundSize: "contain",
+                pointerEvents: "none",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            ></div>
+            <blockquote
+              className="about-message"
+              style={{ position: "relative", zIndex: 1 }}
+            >
               <p>
                 Our first, and most important, objective is to provide a safe
                 workplace. It is our policy to maintain our job sites in a way

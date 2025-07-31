@@ -39,41 +39,69 @@ export default function RCCBuildings() {
             <LottiePlayer src="https://lottie.host/278fdbe7-5a70-45b3-9411-deb9562f2637/Wb3NMW1RNc.lottie" />
           </div>
 
-          <div className="content-box-template animate-on-scroll slide-up visible">
-            <h3>Expertise in RCC Structures</h3>
-            <p>
-              IKH Groups provides top-tier civil construction services with
-              specialized expertise in Reinforced Cement Concrete (RCC)
-              buildings and structures. Our team delivers high-quality
-              construction solutions for commercial complexes, industrial
-              facilities, and infrastructure projects across Saudi Arabia. We
-              combine engineering excellence with practical construction
-              knowledge to deliver durable, safe, and cost-effective structures.
-            </p>
-            <p>
-              Our civil work services include complete turnkey solutions from
-              foundation work to finishing, with particular specialization in
-              RCC framed structures that are designed to withstand the region's
-              environmental conditions. We utilize advanced construction
-              methodologies and quality materials to ensure structural integrity
-              and longevity of all our projects.
-            </p>
-            <p>
-              Our portfolio includes successful completion of projects for major
-              clients in both public and private sectors. We adhere to
-              international construction standards while complying with all
-              local building codes and regulations. Our project management
-              approach ensures timely completion while maintaining strict
-              quality control at every construction phase.
-            </p>
-            <p>
-              With a team of experienced civil engineers, project managers, and
-              skilled workforce, we handle all aspects of civil construction
-              including site preparation, structural work, utility
-              installations, and finishing works. Our expertise extends to
-              specialized construction techniques required for challenging soil
-              conditions and unique architectural requirements.
-            </p>
+          <div
+            className="content-box-template animate-on-scroll slide-up visible"
+            style={{ position: "relative" }}
+          >
+            {/* Centered background logo */}
+            <div
+              style={{
+                position: "absolute",
+                top: "50%",
+                left: "50%",
+                transform: "translate(-50%, -50%)",
+                width: "50%",
+                height: "50%",
+                zIndex: 0,
+                opacity: 0.1,
+                backgroundImage: "url(/images/bg-logo.png)",
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "center",
+                backgroundSize: "contain",
+                pointerEvents: "none",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            ></div>
+            <div style={{ position: "relative", zIndex: 1 }}>
+              <h3>Expertise in RCC Structures</h3>
+              <p>
+                IKH Groups provides top-tier civil construction services with
+                specialized expertise in Reinforced Cement Concrete (RCC)
+                buildings and structures. Our team delivers high-quality
+                construction solutions for commercial complexes, industrial
+                facilities, and infrastructure projects across Saudi Arabia. We
+                combine engineering excellence with practical construction
+                knowledge to deliver durable, safe, and cost-effective
+                structures.
+              </p>
+              <p>
+                Our civil work services include complete turnkey solutions from
+                foundation work to finishing, with particular specialization in
+                RCC framed structures that are designed to withstand the
+                region's environmental conditions. We utilize advanced
+                construction methodologies and quality materials to ensure
+                structural integrity and longevity of all our projects.
+              </p>
+              <p>
+                Our portfolio includes successful completion of projects for
+                major clients in both public and private sectors. We adhere to
+                international construction standards while complying with all
+                local building codes and regulations. Our project management
+                approach ensures timely completion while maintaining strict
+                quality control at every construction phase.
+              </p>
+              <p>
+                With a team of experienced civil engineers, project managers,
+                and skilled workforce, we handle all aspects of civil
+                construction including site preparation, structural work,
+                utility installations, and finishing works. Our expertise
+                extends to specialized construction techniques required for
+                challenging soil conditions and unique architectural
+                requirements.
+              </p>
+            </div>
           </div>
         </div>
       </section>

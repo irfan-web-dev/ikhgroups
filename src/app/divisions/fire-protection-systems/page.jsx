@@ -40,47 +40,73 @@ export default function FireProtectionSystems() {
             <LottiePlayer src="https://lottie.host/5c5855e9-8a12-4e20-bf41-a9c633c45020/8kV9DEKFot.lottie" />
           </div>
 
-          <div className="content-box-template animate-on-scroll slide-up visible">
-            <h3>Life Safety Solutions</h3>
-            <p>
-              IKH Groups provides end-to-end fire protection systems for all
-              types of facilities across Saudi Arabia. Our certified fire safety
-              engineers design and install NFPA-compliant systems tailored to
-              each building's specific risks and requirements. We offer complete
-              solutions including fire detection, suppression, and alarm systems
-              that meet Saudi Civil Defense regulations and international safety
-              standards.
-            </p>
-            <p>
-              Our services include installation of automatic sprinkler systems,
-              fire hydrant networks, gaseous suppression systems (FM200, CO2),
-              and specialized solutions for high-hazard areas. For commercial
-              buildings, we implement addressable fire alarm systems with voice
-              evacuation, while industrial facilities benefit from our
-              explosion-proof detection solutions. All our systems undergo
-              rigorous testing and commissioning to ensure optimal performance
-              during emergencies.
-            </p>
-            <p>
-              We specialize in fire protection for oil & gas facilities,
-              including deluge systems for process areas and foam suppression
-              systems for tank farms. Our team stays updated with the latest
-              technologies like early warning aspirating smoke detection and
-              video flame detection systems. Regular maintenance contracts
-              include system inspections, hydrostatic testing, and alarm panel
-              checks to maintain compliance with Saudi Civil Defense
-              requirements.
-            </p>
-            <p>
-              With extensive experience in Saudi Arabia's construction sector,
-              we've protected everything from high-rise towers to industrial
-              plants. Our fire safety approach combines engineering expertise
-              with practical installation knowledge, ensuring systems are both
-              code-compliant and maintainable. From initial risk assessment to
-              final commissioning and annual maintenance, we deliver
-              comprehensive fire protection that gives building owners peace of
-              mind.
-            </p>
+          <div
+            className="content-box-template animate-on-scroll slide-up visible"
+            style={{ position: "relative" }}
+          >
+            {/* Centered background logo */}
+            <div
+              style={{
+                position: "absolute",
+                top: "50%",
+                left: "50%",
+                transform: "translate(-50%, -50%)",
+                width: "50%",
+                height: "50%",
+                zIndex: 0,
+                opacity: 0.1,
+                backgroundImage: "url(/images/bg-logo.png)",
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "center",
+                backgroundSize: "contain",
+                pointerEvents: "none",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            ></div>
+            <div style={{ position: "relative", zIndex: 1 }}>
+              <h3>Life Safety Solutions</h3>
+              <p>
+                IKH Groups provides end-to-end fire protection systems for all
+                types of facilities across Saudi Arabia. Our certified fire
+                safety engineers design and install NFPA-compliant systems
+                tailored to each building's specific risks and requirements. We
+                offer complete solutions including fire detection, suppression,
+                and alarm systems that meet Saudi Civil Defense regulations and
+                international safety standards.
+              </p>
+              <p>
+                Our services include installation of automatic sprinkler
+                systems, fire hydrant networks, gaseous suppression systems
+                (FM200, CO2), and specialized solutions for high-hazard areas.
+                For commercial buildings, we implement addressable fire alarm
+                systems with voice evacuation, while industrial facilities
+                benefit from our explosion-proof detection solutions. All our
+                systems undergo rigorous testing and commissioning to ensure
+                optimal performance during emergencies.
+              </p>
+              <p>
+                We specialize in fire protection for oil & gas facilities,
+                including deluge systems for process areas and foam suppression
+                systems for tank farms. Our team stays updated with the latest
+                technologies like early warning aspirating smoke detection and
+                video flame detection systems. Regular maintenance contracts
+                include system inspections, hydrostatic testing, and alarm panel
+                checks to maintain compliance with Saudi Civil Defense
+                requirements.
+              </p>
+              <p>
+                With extensive experience in Saudi Arabia's construction sector,
+                we've protected everything from high-rise towers to industrial
+                plants. Our fire safety approach combines engineering expertise
+                with practical installation knowledge, ensuring systems are both
+                code-compliant and maintainable. From initial risk assessment to
+                final commissioning and annual maintenance, we deliver
+                comprehensive fire protection that gives building owners peace
+                of mind.
+              </p>
+            </div>
           </div>
         </div>
       </section>

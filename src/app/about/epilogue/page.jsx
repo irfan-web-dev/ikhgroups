@@ -31,8 +31,35 @@ export default function Epilogue() {
             <LottiePlayer src="https://lottie.host/b3737b52-a65a-4e92-b20c-f639e9433125/ylH7tAhKdn.lottie" />
           </div>
 
-          <div className="content-box-template animate-on-scroll slide-up visible">
-            <blockquote className="about-message">
+          <div
+            className="content-box-template animate-on-scroll slide-up visible"
+            style={{ position: "relative" }}
+          >
+            {/* Centered background logo */}
+            <div
+              style={{
+                position: "absolute",
+                top: "50%",
+                left: "50%",
+                transform: "translate(-50%, -50%)",
+                width: "50%",
+                height: "50%",
+                zIndex: 0,
+                opacity: 0.1,
+                backgroundImage: "url(/images/bg-logo.png)",
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "center",
+                backgroundSize: "contain",
+                pointerEvents: "none",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            ></div>
+            <blockquote
+              className="about-message"
+              style={{ position: "relative", zIndex: 1 }}
+            >
               <p>
                 ASIAN STAR FOR IKHGROUPS (IKHGROUPS) operating from Dammam is a
                 rapidly expanding organization involved in Industrial

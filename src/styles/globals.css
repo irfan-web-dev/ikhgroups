@@ -2284,7 +2284,7 @@ ul {
 }
 
 .section-title-template h2 {
-  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
   color: var(--primary);
   position: relative;
   display: inline-block;

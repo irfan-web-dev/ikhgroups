@@ -7,11 +7,16 @@ export default function CompletedProjects() {
   return (
     <>
       <section className="hero-section-template">
-        <img
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
           className="hero-video-background"
-          src="/images/group-chairman.jpg"
-          alt=""
-        />
+        >
+          <source src="/videos/completed-project.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
         <div className="container hero-container">
           <div className="hero-text-content floating">
             <h1 className="animate__animated animate__zoomInDown">
@@ -35,7 +40,30 @@ export default function CompletedProjects() {
             <LottiePlayer src="https://lottie.host/1122ad5c-b8b3-4bd1-807f-078947d6c0d6/lNVTeSg7pp.lottie" />
           </div>
 
-          <div className="projects-table-container animate-on-scroll slide-up visible">
+          <div
+            style={{
+              position: "absolute",
+              top: "50%",
+              left: "50%",
+              transform: "translate(-50%, -20%)",
+              width: "50%",
+              height: "50%",
+              zIndex: 0,
+              opacity: 0.1,
+              backgroundImage: "url(/images/bg-logo.png)",
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "center",
+              backgroundSize: "contain",
+              pointerEvents: "none",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          ></div>
+          <div
+            className="projects-table-container animate-on-scroll slide-up visible"
+            style={{ position: "relative", zIndex: 1 }}
+          >
             <table className="projects-table">
               <thead>
                 <tr>

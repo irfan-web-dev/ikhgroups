@@ -33,8 +33,35 @@ export default function ManagingDirector() {
             <LottiePlayer src="https://lottie.host/fe02ad22-c0cd-417f-9531-d6dc4c661361/aXKgZCLrOA.lottie" />
           </div>
 
-          <div className="content-box-template animate-on-scroll slide-up visible">
-            <blockquote className="about-message">
+          <div
+            className="content-box-template animate-on-scroll slide-up visible"
+            style={{ position: "relative" }}
+          >
+            {/* Centered background logo */}
+            <div
+              style={{
+                position: "absolute",
+                top: "50%",
+                left: "50%",
+                transform: "translate(-50%, -50%)",
+                width: "50%",
+                height: "50%",
+                zIndex: 0,
+                opacity: 0.1,
+                backgroundImage: "url(/images/bg-logo.png)",
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "center",
+                backgroundSize: "contain",
+                pointerEvents: "none",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            ></div>
+            <blockquote
+              className="about-message"
+              style={{ position: "relative", zIndex: 1 }}
+            >
               <p>
                 At the outset, we feel privileged and proud to serve the entire
                 Middle East as a premier General Construction Contractor &

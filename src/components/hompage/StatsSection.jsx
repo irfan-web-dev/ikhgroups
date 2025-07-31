@@ -1,7 +1,32 @@
 export default function StatsSection() {
   return (
-    <section id="stats" className="section stats-section visible">
-      <div className="container">
+    <section
+      id="stats"
+      className="section stats-section visible"
+      style={{ position: "relative" }}
+    >
+      {/* Background logo, similar to AboutSection */}
+      <div
+        style={{
+          position: "absolute",
+          top: "50%",
+          left: "50%",
+          transform: "translate(-50%, -50%)",
+          width: "50%",
+          height: "50%",
+          zIndex: 0,
+          opacity: 0.1,
+          backgroundImage: "url(/images/bg-logo.png)",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+          backgroundSize: "contain",
+          pointerEvents: "none",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      ></div>
+      <div className="container" style={{ position: "relative", zIndex: 1 }}>
         <div className="section-title">
           <h2>Our Achievements</h2>
           <p>Numbers that speak for our commitment to excellence</p>

@@ -40,67 +40,94 @@ export default function MechanicalWork() {
             <LottiePlayer src="https://lottie.host/7f0d1320-d223-4742-bef7-e8b29b231dbb/SqcGpcoyF9.lottie" />
           </div>
 
-          <div className="content-box-template animate-on-scroll slide-up visible">
-            <div className="service-section">
-              <h3>Industrial Mechanical Solutions</h3>
-              <p>
-                IKH Groups provides complete mechanical contracting services for
-                oil & gas plants, power stations, manufacturing facilities, and
-                commercial buildings. Our certified mechanical engineers and
-                technicians deliver precision installations of piping systems,
-                pressure vessels, rotating equipment, and structural steel
-                components.
-              </p>
-            </div>
+          <div
+            className="content-box-template animate-on-scroll slide-up visible"
+            style={{ position: "relative" }}
+          >
+            {/* Centered background logo */}
+            <div
+              style={{
+                position: "absolute",
+                top: "50%",
+                left: "50%",
+                transform: "translate(-50%, -50%)",
+                width: "50%",
+                height: "50%",
+                zIndex: 0,
+                opacity: 0.1,
+                backgroundImage: "url(/images/bg-logo.png)",
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "center",
+                backgroundSize: "contain",
+                pointerEvents: "none",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            ></div>
+            <div style={{ position: "relative", zIndex: 1 }}>
+              <div className="service-section">
+                <h3>Industrial Mechanical Solutions</h3>
+                <p>
+                  IKH Groups provides complete mechanical contracting services
+                  for oil & gas plants, power stations, manufacturing
+                  facilities, and commercial buildings. Our certified mechanical
+                  engineers and technicians deliver precision installations of
+                  piping systems, pressure vessels, rotating equipment, and
+                  structural steel components.
+                </p>
+              </div>
 
-            <div className="service-section">
-              <h3>Core Services</h3>
-              <ul className="list-style-template">
-                <li>Process piping installations (ASME B31.3)</li>
-                <li>HVAC mechanical systems implementation</li>
-                <li>Precision pump and compressor alignments</li>
-                <li>Tank farm construction and maintenance</li>
-                <li>Conveyor system installation</li>
-                <li>Pressure vessel installation and testing</li>
-                <li>Structural steel fabrication and erection</li>
-              </ul>
-            </div>
+              <div className="service-section">
+                <h3>Core Services</h3>
+                <ul className="list-style-template">
+                  <li>Process piping installations (ASME B31.3)</li>
+                  <li>HVAC mechanical systems implementation</li>
+                  <li>Precision pump and compressor alignments</li>
+                  <li>Tank farm construction and maintenance</li>
+                  <li>Conveyor system installation</li>
+                  <li>Pressure vessel installation and testing</li>
+                  <li>Structural steel fabrication and erection</li>
+                </ul>
+              </div>
 
-            <div className="service-section">
-              <h3>Industry Compliance</h3>
-              <p>
-                We specialize in ASME-coded pressure systems and API-compliant
-                mechanical installations for the petroleum industry. All our
-                work adheres to Saudi Aramco and SABIC engineering standards,
-                ensuring compliance with strict quality and safety requirements.
-              </p>
-            </div>
+              <div className="service-section">
+                <h3>Industry Compliance</h3>
+                <p>
+                  We specialize in ASME-coded pressure systems and API-compliant
+                  mechanical installations for the petroleum industry. All our
+                  work adheres to Saudi Aramco and SABIC engineering standards,
+                  ensuring compliance with strict quality and safety
+                  requirements.
+                </p>
+              </div>
 
-            <div className="service-section">
-              <h3>Commercial Mechanical Systems</h3>
-              <p>
-                For commercial projects, we handle complete mechanical systems
-                including plumbing networks, fire protection systems, and
-                building automation integrations. Our fabrication workshop
-                produces custom mechanical components to exact specifications.
-              </p>
-            </div>
+              <div className="service-section">
+                <h3>Commercial Mechanical Systems</h3>
+                <p>
+                  For commercial projects, we handle complete mechanical systems
+                  including plumbing networks, fire protection systems, and
+                  building automation integrations. Our fabrication workshop
+                  produces custom mechanical components to exact specifications.
+                </p>
+              </div>
 
-            <div className="service-section">
-              <h3>Maintenance & Integrity Services</h3>
-              <ul className="list-style-template">
-                <li>Preventive maintenance programs</li>
-                <li>Vibration analysis and balancing</li>
-                <li>Thermographic inspections</li>
-                <li>Laser alignment for critical machinery</li>
-                <li>Mechanical integrity assessments</li>
-                <li>Root cause failure analysis</li>
-              </ul>
-              <p>
-                From design and fabrication to installation and maintenance, we
-                provide end-to-end mechanical solutions tailored to Saudi
-                Arabia's industrial landscape.
-              </p>
+              <div className="service-section">
+                <h3>Maintenance & Integrity Services</h3>
+                <ul className="list-style-template">
+                  <li>Preventive maintenance programs</li>
+                  <li>Vibration analysis and balancing</li>
+                  <li>Thermographic inspections</li>
+                  <li>Laser alignment for critical machinery</li>
+                  <li>Mechanical integrity assessments</li>
+                  <li>Root cause failure analysis</li>
+                </ul>
+                <p>
+                  From design and fabrication to installation and maintenance,
+                  we provide end-to-end mechanical solutions tailored to Saudi
+                  Arabia's industrial landscape.
+                </p>
+              </div>
             </div>
           </div>
         </div>

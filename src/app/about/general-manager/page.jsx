@@ -33,8 +33,37 @@ export default function GeneralManager() {
             <LottiePlayer src="https://lottie.host/b5819b3a-1ed5-4d7d-a48f-81d568dcdb57/0lpYS16h8I.lottie" />
           </div>
 
-          <div className="content-box-template animate-on-scroll slide-up visible">
-            <blockquote className="about-message">
+          <div
+            className="content-box-template animate-on-scroll slide-up visible"
+            style={{
+              position: "relative",
+            }}
+          >
+            {/* Centered background logo */}
+            <div
+              style={{
+                position: "absolute",
+                top: "50%",
+                left: "50%",
+                transform: "translate(-50%, -50%)",
+                width: "50%",
+                height: "50%",
+                zIndex: 0,
+                opacity: 0.1,
+                backgroundImage: "url(/images/bg-logo.png)",
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "center",
+                backgroundSize: "contain",
+                pointerEvents: "none",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            ></div>
+            <blockquote
+              className="about-message"
+              style={{ position: "relative", zIndex: 1 }}
+            >
               <p>
                 I am delighted to present a Company to you that is 'built to
                 last' and is proud to have continually delivered the right
