@@ -30,7 +30,7 @@ export default function OurMission() {
           </div>
 
           <div className="content-animation">
-            <LottiePlayer src="https://lottie.host/791ca8c6-69b8-4759-9fa1-4d269d0613f0/GNQcAuqZ0T.lottie" />
+            <LottiePlayer src="https://lottie.host/04ebcb84-c5d3-4572-a5dc-05f59ab94a1b/sBiG5SQUeY.lottie" />
           </div>
 
           <div

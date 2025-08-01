@@ -1,8 +1,11 @@
 "use client";
+import { useState } from "react";
 import Link from "next/link";
 import "../joint-ventures.css";
 
 export default function Crotec() {
+  const [showPdf, setShowPdf] = useState(false);
+
   return (
     <>
       <section className="hero-section-template">
@@ -155,6 +158,108 @@ export default function Crotec() {
                     </li>
                   </ol>
                 </div>
+
+                {/* PDF Section: CROTEC Short Profile */}
+                <div
+                  style={{
+                    margin: "40px 0 32px 0",
+                    maxWidth: "900px",
+                    width: "100%",
+                  }}
+                >
+                  <button
+                    onClick={() => setShowPdf((prev) => !prev)}
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      background:
+                        "linear-gradient(90deg, #ff9800 0%, #ff5722 100%)",
+                      border: "none",
+                      color: "#fff",
+                      fontWeight: "bold",
+                      fontSize: "1.15rem",
+                      cursor: "pointer",
+                      padding: "10px 20px",
+                      borderRadius: "6px",
+                      marginBottom: showPdf ? "16px" : 0,
+                      textDecoration: "none",
+                      outline: "none",
+                      boxShadow: "0 2px 8px rgba(255,152,0,0.10)",
+                      transition: "background 0.2s, color 0.2s",
+                    }}
+                    aria-expanded={showPdf}
+                    aria-controls="crotec-pdf-viewer"
+                  >
+                    CROTEC Short Profile
+                    <span
+                      style={{
+                        marginLeft: "8px",
+                        fontSize: "1.2em",
+                        transition: "transform 0.2s",
+                        display: "inline-block",
+                        transform: showPdf ? "rotate(90deg)" : "rotate(0deg)",
+                      }}
+                      aria-hidden="true"
+                    >
+                      ▶
+                    </span>
+                  </button>
+                  {showPdf && (
+                    <div
+                      id="crotec-pdf-viewer"
+                      style={{
+                        width: "100%",
+                        maxWidth: "900px",
+                        height: "600px",
+                        boxShadow: "0 10px 30px rgba(0, 0, 0, 0.1)",
+                        borderRadius: "16px",
+                        overflow: "hidden",
+                        background: "#f9f9f9",
+                        marginBottom: "12px",
+                        position: "relative",
+                        marginTop: "0",
+                        display: "flex",
+                        flexDirection: "column",
+                      }}
+                    >
+                      <button
+                        onClick={() => setShowPdf(false)}
+                        style={{
+                          position: "absolute",
+                          top: "12px",
+                          right: "16px",
+                          background: "rgba(255,255,255,0.85)",
+                          border: "none",
+                          borderRadius: "6px",
+                          padding: "4px 10px",
+                          fontSize: "0.95rem",
+                          fontWeight: "bold",
+                          color: "#333",
+                          cursor: "pointer",
+                          boxShadow: "0 2px 8px rgba(0,0,0,0.07)",
+                          zIndex: 2,
+                        }}
+                        aria-label="Close PDF"
+                      >
+                        ✕ Hide
+                      </button>
+                      {/* The PDF iframe */}
+                      <iframe
+                        src="/documents/CROTEC_Short%20Profile.pdf"
+                        title="CROTEC Short Profile"
+                        width="100%"
+                        height="100%"
+                        style={{
+                          border: "none",
+                          borderRadius: "16px",
+                          background: "#fff",
+                        }}
+                        allowFullScreen
+                      />
+                    </div>
+                  )}
+                </div>
+                {/* End PDF Section */}
 
                 <div className="contact-info">
                   <h3>Contact Us</h3>

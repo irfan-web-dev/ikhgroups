@@ -6,16 +6,11 @@ export default function HVACServices() {
   return (
     <>
       <section className="hero-section-template">
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
+        <img
           className="hero-video-background"
-        >
-          <source src="/videos/hvac-services.mov" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+          src="/images/hvac-services.jpg"
+          alt=""
+        />
         <div className="container hero-container">
           <div className="hero-text-content">
             <h1 className="animate__animated animate__zoomInDown">

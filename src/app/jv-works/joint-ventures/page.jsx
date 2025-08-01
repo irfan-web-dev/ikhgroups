@@ -65,16 +65,30 @@ export default function JointVentures() {
               }}
             ></div>
             <div
-              className="jv-content-wrapper"
-              style={{ position: "relative", zIndex: 1 }}
+              className="jv-image-container"
+              style={{
+                position: "relative",
+                zIndex: 1,
+                marginBottom: 32,
+                textAlign: "center",
+              }}
             >
-              <div className="jv-image-container">
-                <img
-                  src="/images/joint-ventures.png"
-                  alt="IKH Groups Joint Ventures"
-                  className="jv-image"
-                />
-              </div>
+              <img
+                src="/images/joint-ventures.png"
+                alt="IKH Groups Joint Ventures"
+                className="jv-image"
+                style={{ display: "inline-block" }}
+              />
+            </div>
+            <div
+              className="jv-content-wrapper"
+              style={{
+                position: "relative",
+                zIndex: 1,
+                flexDirection: "column",
+                display: "flex",
+              }}
+            >
               <div className="jv-text-content">
                 <p>
                   IKHGROUPS has come a long way since its birth, achieving
@@ -82,9 +96,9 @@ export default function JointVentures() {
                 </p>
 
                 <div className="jv-list">
-                  <Link href="/joint-ventures/khan-enterprises" passHref>
+                  <Link href="/joint-ventures/ikh-construction" passHref>
                     <div className="jv-item">
-                      <h3>Khan Enterprises</h3>
+                      <h3>IKH GENERAL CONSTRUCTIONS CO</h3>
                     </div>
                   </Link>
                   <Link href="joint-ventures/asian-star" passHref>
@@ -94,7 +108,7 @@ export default function JointVentures() {
                   </Link>
                   <Link href="joint-ventures/crotec" passHref>
                     <div className="jv-item">
-                      <h3>Crotec FOR IKHGROUPS</h3>
+                      <h3>CROTEC FOR IKHGROUPS</h3>
                     </div>
                   </Link>
                   <Link href="joint-ventures/mps" passHref>
@@ -102,19 +116,22 @@ export default function JointVentures() {
                       <h3>MPS FOR IKHGROUPS</h3>
                     </div>
                   </Link>
-                  <Link href="/joint-ventures/ikh-construction" passHref>
-                    <div className="jv-item">
-                      <h3>IKH General Constructions Co</h3>
-                    </div>
-                  </Link>
                   <Link href="/joint-ventures/ikh-import-export" passHref>
                     <div className="jv-item">
-                      <h3>IKH Import And Export</h3>
+                      <h3>IKH IMPORT AND EXPORT</h3>
+                    </div>
+                  </Link>
+                  <Link
+                    href="/jv-works/joint-ventures/khan-enterprises"
+                    passHref
+                  >
+                    <div className="jv-item">
+                      <h3>KHAN ENTERPRISES</h3>
                     </div>
                   </Link>
                   <Link href="/joint-ventures/ikh-cafe" passHref>
                     <div className="jv-item">
-                      <h3>IKH Cafe (Coming soon!)</h3>
+                      <h3>IKH CAFE (Coming soon!)</h3>
                     </div>
                   </Link>
                 </div>
