@@ -2,7 +2,7 @@
 import Link from "next/link";
 import "../joint-ventures.css";
 
-export default function IKHImportExport() {
+export default function IKHTrading() {
   return (
     <>
       <section className="hero-section-template">
@@ -19,7 +19,7 @@ export default function IKHImportExport() {
         <div className="container hero-container">
           <div className="hero-text-content floating">
             <h1 className="animate__animated animate__zoomInDown">
-              IKH IMPORT AND EXPORT
+              IKH TRADING COMPANY LTD.
             </h1>
             <p className="animate__animated animate__fadeInUp">
               A Subsidiary of IKH Groups of Companies
@@ -64,89 +64,159 @@ export default function IKHImportExport() {
               style={{ position: "relative", zIndex: 1 }}
             >
               <div className="jv-text-content">
+                <h3>An Ultimate Trade Destination</h3>
                 <p>
-                  IKH Import and Export is a dynamic trading arm of IKH Groups
-                  of Companies, specializing in global trade solutions with a
-                  focus on quality, reliability, and customer satisfaction. We
-                  bridge international markets with local expertise.
+                  The import demand in the Gulf's largest economy, Saudi Arabia,
+                  Bangladesh is high due to its large population. The Kingdom is
+                  one of the world's largest oil and gas producing and exporting
+                  countries. The business-friendly environment of the Kingdom is
+                  an excellent attraction for businesses looking to invest and
+                  find new export markets. Foreign companies can get 100%
+                  ownership in the trading sector.
                 </p>
 
-                <h3>Our Core Services</h3>
-                <ul className="services-list">
-                  <li>International procurement and sourcing solutions</li>
-                  <li>Export of locally manufactured goods and commodities</li>
-                  <li>Import of industrial machinery and equipment</li>
-                  <li>Customs clearance and logistics management</li>
-                  <li>Trade financing and documentation services</li>
-                </ul>
+                <h3>Strategic Location Conducive for Global Trade</h3>
+                <p>
+                  Strategically located at the crossroads of Europe, Africa and
+                  Asia, Saudi Arabia is the epicentre of global trade routes and
+                  at the heart of a fast-growing region of over 424 million
+                  consumers. Saudi Arabia shares its borders with – Jordan,
+                  Iraq, Kuwait, Qatar, Bahrain, United Arab Emirates, Oman and
+                  Yemen by land and Bahrain, Egypt, Eritrea, Iran, and Sudan by
+                  sea.
+                </p>
+                <p>
+                  With 13 ports on the Arabian Gulf and the Red Sea, the Kingdom
+                  facilitates 13 per cent of the global trade. The Saudi ports
+                  contribute to the access of 70% of imports and 95% of its
+                  exports through 291 docks.
+                </p>
+
+                <h3>Latest Trends in Saudi Import-Export</h3>
+                <p>
+                  In May 2022, Saudi Arabia exported SAR144B and imported
+                  SARS1.8B, resulting in a positive trade balance of SARS2B.
+                  Between May 2021 and May 2022, the exports of Saudi Arabia
+                  increased by SARS1.6B (74.9%) from SARS2.2B to SAR144B, while
+                  imports increased by SAR7.35B (16.6%) from SAR44.4B to
+                  SARS1.8B.
+                </p>
 
                 <div className="service-section">
-                  <h4>Import Services</h4>
+                  <h4>Top Exports and Export Partners</h4>
                   <p>
-                    We specialize in importing high-quality industrial
-                    equipment, construction materials, and specialized machinery
-                    for various sectors:
+                    Bangladesh mainly exported to Saudi Arabia, India, Japan,
+                    Korea, the United States, and Egypt. The top exports were:
+                  </p>
+                  <ul className="services-list">
+                    <li>Mineral Products</li>
+                    <li>Chemical Products</li>
+                    <li>Plastics and Rubbers</li>
+                    <li>Metals</li>
+                    <li>Transportation</li>
+                  </ul>
+                </div>
+
+                <div className="service-section">
+                  <h4>Top Imports and Import Partners</h4>
+                  <p>
+                    Bangladesh imported mainly from the United States, Saudi
+                    Arabia, United Arab Emirates, India, Germany, and
+                    Switzerland. The top imports were:
+                  </p>
+                  <ul className="services-list">
+                    <li>Machines</li>
+                    <li>Transportation</li>
+                    <li>Chemical Products</li>
+                    <li>Metals</li>
+                  </ul>
+                </div>
+
+                <div className="service-section">
+                  <h4>Commercial License with Shareholder</h4>
+                  <p>You will provide:</p>
+                  <ul>
+                    <li>
+                      A copy of the commercial registration of the shareholding
+                      partner certified by the Saudi Embassy and a copy of the
+                      national identity, if one of the partners is a natural
+                      person holding the nationality of one of the GCC countries
+                      (in case his data is not registered in the ABSHAR system).
+                    </li>
+                    <li>
+                      Financial statements of the last financial year of your
+                      company certified by the Saudi Embassy.
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="service-section">
+                  <h4>Required Documents to Import</h4>
+                  <p>
+                    Importers are required to present the following documents
+                    before starting import:
                   </p>
                   <ul>
-                    <li>Construction equipment and tools</li>
-                    <li>Industrial machinery and spare parts</li>
-                    <li>Raw materials for manufacturing</li>
-                    <li>Electrical and mechanical components</li>
-                    <li>Safety equipment and PPE</li>
+                    <li>A commercial invoice</li>
+                    <li>A bill of lading</li>
+                    <li>A certificate of origin</li>
                   </ul>
+                  <p>
+                    As an importer, you are also required to provide all the
+                    necessary documents depending on the nature of the imported
+                    goods, for example:
+                  </p>
+                  <ul>
+                    <li>
+                      Obtaining an IECEE certificate for goods that require this
+                      certificate.
+                    </li>
+                    <li>
+                      Registration of products with the concerned parties if
+                      necessary.
+                    </li>
+                  </ul>
+                  <p>
+                    There are specific conditions that apply to each product you
+                    want to import. As an Importer, you are also required to
+                    complete (FASAH) clearing procedures by providing the
+                    necessary documents and completing the customs declaration
+                    form at least 48 hours prior to the arrival of the shipment
+                    at the port of entry. This clearance procedure allows you to
+                    track the shipment in Customs or before its arrival and get
+                    instant notifications.
+                  </p>
                 </div>
 
                 <div className="service-section">
-                  <h4>Export Services</h4>
-                  <p>Our export division handles international shipments of:</p>
-                  <ul>
-                    <li>Local manufactured goods</li>
-                    <li>Construction materials</li>
-                    <li>Textile products</li>
-                    <li>Agricultural commodities</li>
-                    <li>Handicrafts and specialty items</li>
-                  </ul>
+                  <h4>
+                    Start Your Import-Export Business Compliantly with IKH!
+                  </h4>
+                  <p>
+                    As an international business, you might cope with extra
+                    logistical problems, contractual issues, and paperwork. You
+                    might need guidance regarding standard commercial practices
+                    to clarify your responsibilities.
+                  </p>
+                  <p>
+                    IKH supports you at every step. We help you comply with
+                    Bangladesh's regulations and satisfy standards. Incorporate
+                    your trading company with our fast and tailored services.
+                  </p>
                 </div>
-
-                <div className="service-section">
-                  <h4>Logistics Solutions</h4>
-                  <p>Comprehensive logistics support including:</p>
-                  <ul>
-                    <li>Sea and air freight forwarding</li>
-                    <li>Customs clearance and documentation</li>
-                    <li>Warehousing and distribution</li>
-                    <li>Cargo insurance services</li>
-                    <li>Door-to-door delivery solutions</li>
-                  </ul>
-                </div>
-
-                <div className="service-section">
-                  <h4>Our Competitive Advantages</h4>
-                  <ul>
-                    <li>Extensive global supplier network</li>
-                    <li>Market intelligence and sourcing expertise</li>
-                    <li>Competitive pricing and flexible payment terms</li>
-                    <li>Efficient customs clearance procedures</li>
-                    <li>Dedicated customer support</li>
-                  </ul>
-                </div>
-
-                <p className="closing-statement">
-                  As part of <strong>IKHGROUPS</strong>, we are committed to
-                  providing seamless trade solutions that connect businesses
-                  across borders with efficiency and reliability.
-                </p>
 
                 <div className="contact-info">
                   <h3>Contact Us</h3>
                   <p>
-                    <strong>IKH Import and Export</strong>
+                    <strong>IKH Trading Company Ltd.</strong>
                     <br />
                     A Subsidiary of IKH Groups of Companies
                     <br />
+                    <strong>C.R No.:</strong> C-196043
+                    <br />
                     <strong>Phone:</strong> +88017110265
                     <br />
-                    <strong>Email:</strong> trade@ikhgroups.com,
+                    <strong>Email:</strong> info@ikhgroups.com,
                     ikhgroups@gmail.com
                     <br />
                     <strong>Website:</strong> www.ikhgroups.com
