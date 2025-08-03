@@ -96,7 +96,10 @@ export default function JointVentures() {
                 </p>
 
                 <div className="jv-list">
-                  <Link href="/joint-ventures/ikh-construction" passHref>
+                  <Link
+                    href="/jv-works/joint-ventures/ikh-construction"
+                    passHref
+                  >
                     <div className="jv-item">
                       <h3>IKH GENERAL CONSTRUCTIONS CO</h3>
                     </div>
@@ -116,7 +119,10 @@ export default function JointVentures() {
                       <h3>MPS FOR IKHGROUPS</h3>
                     </div>
                   </Link>
-                  <Link href="/joint-ventures/ikh-import-export" passHref>
+                  <Link
+                    href="/jv-works/joint-ventures/ikh-import-export"
+                    passHref
+                  >
                     <div className="jv-item">
                       <h3>IKH IMPORT AND EXPORT</h3>
                     </div>
@@ -129,7 +135,7 @@ export default function JointVentures() {
                       <h3>KHAN ENTERPRISES</h3>
                     </div>
                   </Link>
-                  <Link href="/joint-ventures/ikh-cafe" passHref>
+                  <Link href="/jv-works/joint-ventures/ikh-cafe" passHref>
                     <div className="jv-item">
                       <h3>IKH CAFE (Coming soon!)</h3>
                     </div>
