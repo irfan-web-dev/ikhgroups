@@ -1,8 +1,8 @@
 "use client";
 import { useSearchParams } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useState, Suspense } from "react";
 
-export default function SearchPage() {
+function SearchPageInner() {
   const searchParams = useSearchParams();
   const query = searchParams.get("q")?.toLowerCase() || "";
   const [results, setResults] = useState([]);
@@ -14,7 +14,7 @@ export default function SearchPage() {
       const matchingLines = content
         .split(". ")
         .filter((line) => line.includes(query))
-        .slice(0, 5); // Limit to 5 results
+        .slice(0, 5);
 
       setResults(matchingLines.length ? matchingLines : ["No match found."]);
     }
@@ -71,5 +71,13 @@ export default function SearchPage() {
         ))}
       </ul>
     </div>
+  );
+}
+
+export default function SearchPage() {
+  return (
+    <Suspense fallback={<div>Loading search...</div>}>
+      <SearchPageInner />
+    </Suspense>
   );
 }
