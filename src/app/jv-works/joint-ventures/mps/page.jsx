@@ -199,7 +199,7 @@ export default function MpsEngineers() {
                     <br />
                     <strong>Phone:</strong> 01836966511, 01715803716
                     <br />
-                    <strong>Email:</strong> mpsengineers@gmail.com
+                    <strong>Email:</strong> info@ikhgroups.com
                   </p>
                 </div>
               </div>

@@ -153,7 +153,7 @@ export default function Sidebar() {
                 </Link>
               </li>
               <li>
-                <Link href="/policies/she-management">She management</Link>
+                <Link href="/policies/hse-management">HSE management</Link>
               </li>
             </ul>
           </li>

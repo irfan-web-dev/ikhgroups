@@ -270,9 +270,7 @@ export default function Crotec() {
                     <br />
                     <strong>Mobile:</strong> +88 01736 410919
                     <br />
-                    <strong>Email:</strong> jamilhossain030@gmail.com
-                    <br />
-                    <strong>Email:</strong> kamrul.islam717@gmail.com
+                    <strong>Email:</strong> kamrul@crotec.ikhgroups.com
                   </p>
                   <p>
                     <strong>ANTI CORROSION TECHNOLOGY BD. LTD</strong>
@@ -281,8 +279,7 @@ export default function Crotec() {
                     <br />
                     <strong>CR. No.</strong> C-150847/2019
                     <br />
-                    <strong>Email:</strong> kamrul.islam717@gmail.com,
-                    jamilhossain030@gmail.com
+                    <strong>Email:</strong> info@ikhgroups.com
                   </p>
                 </div>
               </div>

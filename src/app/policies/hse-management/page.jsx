@@ -2,7 +2,7 @@
 
 import LottiePlayer from "@/components/LottiePlayer";
 
-export default function SheManagement() {
+export default function HSEManagement() {
   return (
     <>
       <section className="hero-section-template">
@@ -13,13 +13,13 @@ export default function SheManagement() {
           playsInline
           className="hero-video-background"
         >
-          <source src="/videos/she-management.mov" type="video/mp4" />
+          <source src="/videos/hse-management.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div className="container hero-container">
           <div className="hero-text-content floating">
             <h1 className="animate__animated animate__zoomInDown">
-              She Management
+              HSE Management
             </h1>
             <p className="animate__animated animate__fadeInUp">
               At IKH Groups, we prioritize Safety, Health, and Environmental
@@ -33,7 +33,7 @@ export default function SheManagement() {
       <section className="content-section-template">
         <div className="content-container-template">
           <div className="section-title-template">
-            <h2>Our SHE Commitment</h2>
+            <h2>Our HSE Commitment</h2>
           </div>
 
           <div className="content-animation">
@@ -65,6 +65,22 @@ export default function SheManagement() {
                 justifyContent: "center",
               }}
             ></div>
+            <div
+              className="jv-image-container"
+              style={{
+                position: "relative",
+                zIndex: 1,
+                marginBottom: 32,
+                textAlign: "center",
+              }}
+            >
+              <img
+                src="/images/hse-management.png"
+                alt="HSE Management"
+                className="jv-image"
+                style={{ display: "inline-block" }}
+              />
+            </div>
             <div style={{ position: "relative", zIndex: 1 }}>
               <p>
                 The company recognizes that high standards of health, safety and

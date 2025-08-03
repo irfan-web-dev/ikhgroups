@@ -37,7 +37,7 @@ export default function OverHeadTelephonesLines() {
           </div>
 
           <div className="content-animation">
-            <LottiePlayer src="https://lottie.host/b2390e78-e723-43c3-b979-f08da9a5ad64/WUZGENCMYr.lottie" />
+            <LottiePlayer src="https://lottie.host/5fd0b823-0b6c-4e1a-aac0-1778268d574b/zaDYk2UNNk.lottie" />
           </div>
 
           <div

@@ -13,7 +13,7 @@ export default function SteelBuildings() {
           playsInline
           className="hero-video-background"
         >
-          <source src="/videos/steel-buildings.MP4" type="video/mp4" />
+          <source src="/videos/steel-building.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div className="container hero-container">

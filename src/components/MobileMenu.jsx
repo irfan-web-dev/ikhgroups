@@ -220,8 +220,8 @@ export default function MobileMenu() {
               </Link>
             </li>
             <li>
-              <Link href="/policies/she-management" className="mobile-nav-link">
-                She Management
+              <Link href="/policies/hse-management" className="mobile-nav-link">
+                HSE Management
               </Link>
             </li>
           </ul>
