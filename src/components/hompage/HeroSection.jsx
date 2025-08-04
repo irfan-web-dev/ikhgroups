@@ -1,30 +1,57 @@
 "use client";
-
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 
 export default function HeroSection() {
   const videoRef = useRef(null);
   const [videoLoaded, setVideoLoaded] = useState(false);
+  const [videoSrc, setVideoSrc] = useState("/videos/hero_section_video.MP4");
+  const [videoError, setVideoError] = useState(false);
+
+  const fallbackVideo = "/videos/jv-works.mp4";
 
   useEffect(() => {
-    // Preload the video
     const video = videoRef.current;
-    if (video) {
-      video.load();
+    if (!video) return;
 
-      const handleCanPlay = () => {
-        setVideoLoaded(true);
-        video.play().catch((e) => console.log("Autoplay prevented:", e));
-      };
+    let fallbackTimeout;
 
-      video.addEventListener("canplay", handleCanPlay);
+    // Handler for when the video can play
+    const handleCanPlay = () => {
+      setVideoLoaded(true);
+      clearTimeout(fallbackTimeout);
+      video.play().catch((e) => console.log("Autoplay prevented:", e));
+    };
 
-      return () => {
-        video.removeEventListener("canplay", handleCanPlay);
-      };
-    }
-  }, []);
+    // Handler for video error
+    const handleError = () => {
+      if (!videoError) {
+        setVideoError(true);
+        setVideoSrc(fallbackVideo);
+        setVideoLoaded(false);
+      }
+    };
+
+    fallbackTimeout = setTimeout(() => {
+      if (!videoLoaded && !videoError) {
+        setVideoError(true);
+        setVideoSrc(fallbackVideo);
+        setVideoLoaded(false);
+      }
+    }, 200);
+
+    video.addEventListener("canplay", handleCanPlay);
+    video.addEventListener("error", handleError);
+
+    video.load();
+
+    return () => {
+      clearTimeout(fallbackTimeout);
+      video.removeEventListener("canplay", handleCanPlay);
+      video.removeEventListener("error", handleError);
+    };
+    // eslint-disable-next-line
+  }, [videoSrc, videoError]);
 
   return (
     <section className="hero-section visible" id="home">
@@ -47,8 +74,9 @@ export default function HeroSection() {
             playsInline
             preload="auto"
             className={videoLoaded ? "video-loaded" : "video-loading"}
+            key={videoSrc}
           >
-            <source src="/videos/hero_section_video.MP4" type="video/mp4" />
+            <source src={videoSrc} type="video/mp4" />
           </video>
         </div>
       </div>
