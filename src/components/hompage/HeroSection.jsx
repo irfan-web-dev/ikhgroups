@@ -5,53 +5,40 @@ import { useEffect, useRef, useState } from "react";
 export default function HeroSection() {
   const videoRef = useRef(null);
   const [videoLoaded, setVideoLoaded] = useState(false);
-  const [videoSrc, setVideoSrc] = useState("/videos/hero_section_video.MP4");
-  const [videoError, setVideoError] = useState(false);
-
-  const fallbackVideo = "/videos/jv-works.mp4";
 
   useEffect(() => {
     const video = videoRef.current;
     if (!video) return;
 
-    let fallbackTimeout;
+    video.oncanplay = null;
+    video.onerror = null;
 
     // Handler for when the video can play
     const handleCanPlay = () => {
       setVideoLoaded(true);
-      clearTimeout(fallbackTimeout);
-      video.play().catch((e) => console.log("Autoplay prevented:", e));
+      if (video.paused) {
+        video.play().catch((e) => {});
+      }
     };
 
     // Handler for video error
     const handleError = () => {
-      if (!videoError) {
-        setVideoError(true);
-        setVideoSrc(fallbackVideo);
-        setVideoLoaded(false);
-      }
+      // If video fails, just show placeholder
+      setVideoLoaded(false);
     };
 
-    fallbackTimeout = setTimeout(() => {
-      if (!videoLoaded && !videoError) {
-        setVideoError(true);
-        setVideoSrc(fallbackVideo);
-        setVideoLoaded(false);
-      }
-    }, 200);
+    video.oncanplay = handleCanPlay;
+    video.onerror = handleError;
 
-    video.addEventListener("canplay", handleCanPlay);
-    video.addEventListener("error", handleError);
-
+    // Try to load the video
     video.load();
 
+    // Clean up
     return () => {
-      clearTimeout(fallbackTimeout);
-      video.removeEventListener("canplay", handleCanPlay);
-      video.removeEventListener("error", handleError);
+      video.oncanplay = null;
+      video.onerror = null;
     };
-    // eslint-disable-next-line
-  }, [videoSrc, videoError]);
+  }, []);
 
   return (
     <section className="hero-section visible" id="home">
@@ -59,7 +46,7 @@ export default function HeroSection() {
         <div className="hero-background">
           {!videoLoaded && (
             <img
-              src="/images/commercial_project.jpg"
+              src="/images/commercial_project.JPEG"
               alt="Hero Background"
               className="hero-placeholder"
               loading="eager"
@@ -74,9 +61,9 @@ export default function HeroSection() {
             playsInline
             preload="auto"
             className={videoLoaded ? "video-loaded" : "video-loading"}
-            key={videoSrc}
+            key="/videos/hero_secion_video.MP4"
           >
-            <source src={videoSrc} type="video/mp4" />
+            <source src="/videos/hero_section_video.MP4" type="video/mp4" />
           </video>
         </div>
       </div>
