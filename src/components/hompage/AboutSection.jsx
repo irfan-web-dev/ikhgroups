@@ -80,7 +80,7 @@ export default function AboutSection() {
                 </div>
                 <div className="feature-content">
                   <h4>Expert Team</h4>
-                  <p>Skilled professionals with years of experience</p>
+                  <p>Skilled professionals with Several years of experience</p>
                 </div>
                 <div className="glass-reflection"></div>
               </div>

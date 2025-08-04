@@ -25,7 +25,7 @@ export default function Crotec() {
               ANTI CORROSION TECHNOLOGY BD. LTD.
             </h1>
             <p className="animate__animated animate__fadeInUp">
-              A member of MAX GROUP of Companies
+              A member of IKH GROUP of Companies
             </p>
           </div>
         </div>
