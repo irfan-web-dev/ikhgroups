@@ -106,17 +106,17 @@ export default function JointVentures() {
                   </Link>
                   <Link href="joint-ventures/asian-star" passHref>
                     <div className="jv-item">
-                      <h3>ASIAN STAR FOR IKHGROUPS</h3>
+                      <h3>Asian Star General Contracting Company</h3>
                     </div>
                   </Link>
                   <Link href="joint-ventures/crotec" passHref>
                     <div className="jv-item">
-                      <h3>CROTEC FOR IKHGROUPS</h3>
+                      <h3>Anti Corrosion Technology Bd. Ltd. (CROTEC)</h3>
                     </div>
                   </Link>
                   <Link href="joint-ventures/mps" passHref>
                     <div className="jv-item">
-                      <h3>MPS FOR IKHGROUPS</h3>
+                      <h3>MPS Engineering Consultancy and Trading</h3>
                     </div>
                   </Link>
                   <Link
