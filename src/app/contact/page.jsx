@@ -153,7 +153,7 @@ export default function Contact() {
                 <p>Phone: +966 13 823 7014</p>
                 <p>Kingdom of Saudi Arabia</p>
                 <p>Email: info@ikhgroups.com</p>
-                <p>sales@cacgroups.com</p>
+                <p>sales@ikhgroups.com</p>
               </div>
             </div>
 
@@ -167,7 +167,7 @@ export default function Contact() {
                 <p>Jubail - 31961</p>
                 <p>Kingdom of Saudi Arabia</p>
                 <p>Email: info@ikhgroups.com</p>
-                <p>cac@cacgroups.com</p>
+                <p>sales@ikhgroups.com</p>
               </div>
             </div>
           </div>

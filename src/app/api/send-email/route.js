@@ -14,7 +14,7 @@ export async function POST(request) {
   });
 
   // Both emails should always receive the message
-  const recipients = ["info@ikhgroups.com", "sales@cacgroups.com"];
+  const recipients = ["info@ikhgroups.com", "sales@ikhgroups.com"];
 
   const mailOptions = {
     from: process.env.EMAIL_USER,
