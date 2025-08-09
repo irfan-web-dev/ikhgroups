@@ -30,24 +30,8 @@ export default function AboutSection() {
           <p>Learn more about our company and our commitment to excellence</p>
         </div>
 
-        <div
-          className="about-content"
-          style={{
-            display: "flex",
-            flexWrap: "wrap",
-            alignItems: "center",
-            justifyContent: "space-between",
-            gap: "2.5rem",
-          }}
-        >
-          <div
-            className="about-text"
-            style={{
-              flex: "1 1 350px",
-              minWidth: 0,
-              maxWidth: "600px",
-            }}
-          >
+        <div className="about-content">
+          <div className="about-text">
             <h3>Building Excellence Since Inception</h3>
             <p>
               IKH Groups of Companies is a leading construction and services

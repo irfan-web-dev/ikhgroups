@@ -803,19 +803,13 @@ ul {
   background-repeat: no-repeat;
 }
 
-.about-content {
+/* .about-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 60px;
   align-items: center;
   color: white;
-}
-
-@media (max-width: 768px) {
-  .about-content {
-    grid-template-columns: 1fr;
-  }
-}
+} */
 
 .about-text h3 {
   font-size: 36px;
