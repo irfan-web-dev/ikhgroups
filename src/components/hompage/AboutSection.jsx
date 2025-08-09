@@ -9,7 +9,7 @@ export default function AboutSection() {
       <div
         style={{
           position: "absolute",
-          top: "35%",
+          top: "40%",
           left: "50%",
           transform: "translate(-50%, -50%)",
           width: "50%",
@@ -30,7 +30,6 @@ export default function AboutSection() {
           <p>Learn more about our company and our commitment to excellence</p>
         </div>
 
-        {/* Improved about-content layout for better image positioning */}
         <div
           className="about-content"
           style={{
@@ -104,59 +103,6 @@ export default function AboutSection() {
                 </div>
                 <div className="glass-reflection"></div>
               </div>
-            </div>
-          </div>
-
-          {/* Improved image wrapper for better alignment and sizing */}
-          <div
-            className="about-image-wrapper"
-            style={{
-              flex: "1 1 320px",
-              display: "flex",
-              justifyContent: "flex-end",
-              alignItems: "center",
-              minWidth: "280px",
-              maxWidth: "420px",
-              height: "100%",
-            }}
-          >
-            <div
-              className="about-image"
-              style={{
-                position: "relative",
-                width: "100%",
-                maxWidth: "380px",
-                aspectRatio: "4/5",
-                borderRadius: "18px",
-                overflow: "hidden",
-                boxShadow: "0 8px 32px rgba(0,0,0,0.12)",
-                background: "#fff",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-            >
-              <img
-                src="/images/about-section-pic.png"
-                alt="IKH Groups Building"
-                style={{
-                  width: "100%",
-                  height: "100%",
-                  objectFit: "cover",
-                  objectPosition: "center",
-                  display: "block",
-                }}
-              />
-              <div
-                className="image-overlay"
-                style={{
-                  position: "absolute",
-                  inset: 0,
-                  background:
-                    "linear-gradient(180deg,rgba(255,255,255,0.05) 0%,rgba(0,0,0,0.08) 100%)",
-                  pointerEvents: "none",
-                }}
-              ></div>
             </div>
           </div>
         </div>

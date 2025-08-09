@@ -1,6 +1,6 @@
 "use client";
-import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
+import TextType from "../animation.jsx";
 
 export default function HeroSection() {
   const videoRef = useRef(null);
@@ -40,6 +40,11 @@ export default function HeroSection() {
     };
   }, []);
 
+  const handleAnimationComplete = () => {
+    // You can add any logic here if needed
+    // console.log('Animation completed!');
+  };
+
   return (
     <section className="hero-section visible" id="home">
       <div className="hero-overlay">
@@ -70,9 +75,40 @@ export default function HeroSection() {
 
       <div className="container">
         <div className="hero-content">
-          <h1 className="hero-title">WELCOME TO,</h1>
-          <h2 className="hero-subtitle">IKH GROUPS OF Co.</h2>
-          <p className="hero-text">ASIAN STAR GENERAL CONTRACTING CO.</p>
+          <TextType
+            text="WELCOME TO,"
+            typingSpeed={75}
+            pauseDuration={1500}
+            showCursor={true}
+            cursorCharacter=""
+            className="hero-title"
+            deletingSpeed={30}
+            loop={true}
+          />
+          <TextType
+            text={["IKH GROUPS OF Co.", "IKH GROUPS OF Co."]}
+            typingSpeed={75}
+            pauseDuration={1500}
+            showCursor={true}
+            cursorCharacter="|"
+            textColors={["#f97316"]}
+            className="hero-subtitle"
+            deletingSpeed={30}
+            loop={true}
+          />
+          <TextType
+            text={[
+              "ASIAN STAR GENERAL CONTRACTING CO.",
+              "ASIAN STAR GENERAL CONTRACTING CO.",
+            ]}
+            typingSpeed={75}
+            pauseDuration={1500}
+            showCursor={true}
+            cursorCharacter="|"
+            className="hero-text"
+            deletingSpeed={30}
+            loop={true}
+          />
           <button
             onClick={() => {
               const section = document.getElementById("about");

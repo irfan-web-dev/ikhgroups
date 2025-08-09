@@ -69,13 +69,13 @@ export default function Crotec() {
               <div className="jv-text-content">
                 <p>
                   We would like to take this opportunity to introduce the
-                  company ANTI CORROSION TECHNOLOGY BD. LTD as one of the
-                  emerging and most experienced and qualified organization in
-                  the field of corrosion protection under one roof and ready to
-                  serve marine, industrial, construction, mining, ship building,
-                  refineries, desalination and power plants as well as
-                  petrochemical industries, oil and gas sectors and nuclear
-                  power plants in the whole of Bangladesh.
+                  company ANTI CORROSION TECHNOLOGY BD. LTD. Known as "CROTEC"
+                  as one of the emerging and most experienced and qualified
+                  organization in the field of corrosion protection under one
+                  roof and ready to serve marine, industrial, construction,
+                  mining, ship building, refineries, desalination and power
+                  plants as well as petrochemical industries, oil and gas
+                  sectors and nuclear power plants in the whole of Bangladesh.
                 </p>
 
                 <h3>Organization</h3>
@@ -103,59 +103,35 @@ export default function Crotec() {
                 <h3>Our Services</h3>
 
                 <div className="service-section">
-                  <h4>Corrosion Protection by Coatings and Linings:</h4>
-                  <p>CROTEC offers the following services:</p>
+                  <p> CROTEC service is the followings:</p>
                   <ol className="services-list">
+                    <li>Fireproofing (cementitious &amp; Intumescent paint)</li>
                     <li>
-                      Manual Abrasive Blast Cleaning of Tanks, Vessels, Pipes,
-                      Structural Steel, Chimneys, Chimney liners, Flare stacks,
-                      Boilers, Columns, De-Aerators, Evaporators, Transmission
-                      Towers and all Industrial Equipment using Garnet, Coal
-                      slag, Copper slag, steel Grit and Aluminum Oxides and all
-                      other abrasives as required.
+                      Blasting, Painting, Floor coating, Epoxy coating, FGD
+                      Lining, Acid resistance lining.
                     </li>
+                    <li>Fire safety Plan</li>
+                    <li>Consultancy</li>
+                    <li>Auditing</li>
+                    <li>Structural Design &amp; Drawings (RCC &amp; Steel)</li>
+                    <li>Architectural Drawings</li>
                     <li>
-                      Applications of Coatings using Airless Spray Pumps,
-                      Conventional Spray Pumps, Heated Plural Component Spray
-                      Pumps, Grover pumps, Hemo pumps, Hopper Guns and
-                      Putzmister Concrete pumps.
+                      uPVC &amp; cPVC pipes for Plumbing &amp; Electrical
+                      Drawings
                     </li>
+                    <li>DA (Details Assessment) Drawings &amp; Report</li>
+                    <li>Retrofet design &amp; construction</li>
+                    <li>RCC Construction</li>
+                    <li>Steel Construction</li>
+                    <li>Environmental impact assessment &amp; testing</li>
                     <li>
-                      All types of Coating Materials such as Zinc, Epoxies,
-                      Enamels, Polyester, Vinyl Ester.
+                      Fire Fighting (sprinkler, protection &amp; detection)
+                      Design, drawings as per BNBC guideline &amp; UL Standard
+                      as required by RSC, Elevate &amp; Nirupon
                     </li>
-                    <li>
-                      All types of Linings including Rubber Linings (CR, NR,
-                      BIIR, etc.) Flake linings, GRE and FRP Materials
-                      (Spray-Applied or Manual Lay-up System), Emulsions,
-                      Textures and other Decorative Materials, Intumescent
-                      Epoxies such as Chartek, Pit-Char, Thermo Lag and all
-                      types of Light weight Cementitious Fire Proofing Materials
-                      such as Monokotes and Fendolites.
-                    </li>
-                    <li>
-                      All types of Heavy corrosion protection Linings such as
-                      Teflon (PFA, PTFE) Lining, Brick and Tiles Lining (Carbon
-                      Bricks as well as Ceramic and Red Shale Bricks) including
-                      Laying and Jointing Mortars based on Furanic, Phenolic,
-                      Vinyl Ester, Epoxy and Potassium Silicate Resins.
-                    </li>
-                    <li>
-                      Road Markings with Thermoplastic Materials and Cold
-                      applied Paints as well as Safety Signage for Roads, plants
-                      and all Industrial and Commercial projects.
-                    </li>
-                    <li>
-                      Sand blasting to expose the aggregates, high pressure
-                      water jetting, concrete tank linings above ground and
-                      underground pipeline coatings, floor coatings, removal of
-                      sludge and cleaning of tanks and water proofing.
-                    </li>
-                    <li>
-                      Supply of Manpower including Supervisors, QC., Sand
-                      Blasters, Spray Painters, Painters, General Labors and
-                      Sand Blasting and Coating Equipment.
-                    </li>
+                    <li>Road Marking, Traffic sign &amp; Signal Marking.</li>
+                    <li>Insulation</li>
+                    <li>Refractory Lining, Rubber Lining</li>
                   </ol>
                 </div>
 

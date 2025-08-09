@@ -136,6 +136,11 @@ export default function Sidebar() {
               <li>
                 <Link href="/divisions/painting-work">Painting Work</Link>
               </li>
+              <li>
+                <Link href="/divisions/plumbing-services">
+                  Plumbing Services
+                </Link>
+              </li>
             </ul>
           </li>
 

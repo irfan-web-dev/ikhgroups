@@ -2,29 +2,79 @@
 import "./contact.css";
 import LottiePlayer from "@/components/LottiePlayer";
 import Link from "next/link";
-import { useEffect } from "react";
+import { useEffect, useState, useRef } from "react";
 
 export default function Contact() {
-  useEffect(() => {
-    const form = document.getElementById("contactForm");
-    if (form) {
-      form.addEventListener("submit", function (e) {
-        e.preventDefault();
+  const [isSending, setIsSending] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState(null);
+  const timerRef = useRef(null);
 
-        const name = document.getElementById("name").value;
-        const email = document.getElementById("email").value;
-        const phone = document.getElementById("phone").value;
-        const subject = document.getElementById("subject").value;
-        const message = document.getElementById("message").value;
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsSending(true);
+    setSubmitStatus(null);
 
-        alert(
-          `Thank you, ${name}! Your message has been sent. We'll contact you soon.`
-        );
+    const formData = {
+      name: e.target.name.value,
+      email: e.target.email.value,
+      phone: e.target.phone.value,
+      subject: e.target.subject.value,
+      message: e.target.message.value,
+    };
 
-        this.reset();
+    try {
+      const response = await fetch("/api/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
       });
-    }
 
+      const data = await response.json();
+
+      if (data.success) {
+        setSubmitStatus({
+          success: true,
+          message: `Thank you, ${formData.name}! Your message has been sent. We'll contact you soon.`,
+        });
+        e.target.reset();
+      } else {
+        setSubmitStatus({
+          success: false,
+          message: "Failed to send message. Please try again later.",
+        });
+      }
+    } catch (error) {
+      setSubmitStatus({
+        success: false,
+        message: "An error occurred. Please try again later.",
+      });
+    } finally {
+      setIsSending(false);
+    }
+  };
+
+  // Automatically remove the submitStatus message after 4 seconds
+  useEffect(() => {
+    if (submitStatus) {
+      // Clear any previous timer
+      if (timerRef.current) {
+        clearTimeout(timerRef.current);
+      }
+      timerRef.current = setTimeout(() => {
+        setSubmitStatus(null);
+      }, 5000);
+    }
+    // Cleanup on unmount or when submitStatus changes
+    return () => {
+      if (timerRef.current) {
+        clearTimeout(timerRef.current);
+      }
+    };
+  }, [submitStatus]);
+
+  useEffect(() => {
     // Smooth scrolling
     const anchors = document.querySelectorAll('Link[href^="#"]');
     const handleClick = (e) => {
@@ -125,7 +175,20 @@ export default function Contact() {
 
         <div className="contact-form-section">
           <h2 className="contact-section-title">Send Us a Message</h2>
-          <form className="contact-form" id="contactForm">
+          {submitStatus && (
+            <div
+              className={`form-message ${
+                submitStatus.success ? "success" : "error"
+              }`}
+            >
+              {submitStatus.message}
+            </div>
+          )}
+          <form
+            className="contact-form"
+            id="contactForm"
+            onSubmit={handleSubmit}
+          >
             <div className="form-group">
               <input
                 type="text"
@@ -175,8 +238,13 @@ export default function Contact() {
               />
             </div>
 
-            <button type="submit" className="button button-primary">
-              Send Message <i className="fas fa-paper-plane" />
+            <button
+              type="submit"
+              className="button button-primary"
+              disabled={isSending}
+            >
+              {isSending ? "Sending..." : "Send Message"}{" "}
+              <i className="fas fa-paper-plane" />
             </button>
           </form>
         </div>

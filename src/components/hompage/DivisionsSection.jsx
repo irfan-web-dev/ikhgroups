@@ -173,6 +173,14 @@ const divisions = [
       "Professional painting services for industrial, commercial, and residential properties.",
     link: "/divisions/painting-work",
   },
+  {
+    id: 14,
+    title: " Plumbing Services",
+    icon: "fa-paint-roller",
+    description:
+      "Professional painting services for industrial, commercial, and residential properties.",
+    link: "/divisions/plumbing-services",
+  },
 ];
 
 function ServiceCard({ division, delay }) {

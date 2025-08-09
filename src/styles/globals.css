@@ -575,9 +575,9 @@ ul {
   transition: opacity 0.5s ease;
 }
 
-/* .video-loading {
+.video-loading {
   opacity: 0;
-} */
+}
 
 .video-loaded {
   opacity: 1;
@@ -797,12 +797,10 @@ ul {
 /* About Section */
 .about-section {
   padding: 80px 0;
-  background: linear-gradient(
-    185deg,
-    rgba(249, 115, 22, 0.05) 0%,
-    rgba(249, 115, 22, 0.02) 50%,
-    rgba(255, 255, 255, 1) 100%
-  );
+  background: url("https://images.unsplash.com/photo-1525048666851-6a476d155724?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .about-content {
@@ -810,123 +808,20 @@ ul {
   grid-template-columns: 1fr 1fr;
   gap: 60px;
   align-items: center;
+  color: white;
 }
 
-/* --- iOS/Responsive About Image Styles --- */
-.about-image-wrapper {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* Ensures image is centered in its grid cell */
-  width: 100%;
-  height: 100%;
-  min-height: 320px;
-}
-
-.about-image {
-  position: relative;
-  border-radius: 18px;
-  overflow: hidden;
-  box-shadow: 0 10px 32px -8px rgba(0, 0, 0, 0.13),
-    0 2px 8px rgba(0, 0, 0, 0.07);
-  background: #fff;
-  width: 100%;
-  max-width: 420px;
-  min-width: 220px;
-  min-height: 220px;
-  aspect-ratio: 4/3;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.about-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  border-radius: 18px;
-  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: none;
-}
-
-.about-image:hover img {
-  transform: scale(1.04);
-}
-
-.image-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    to bottom,
-    rgba(249, 115, 22, 0.08),
-    rgba(249, 115, 22, 0.18)
-  );
-  z-index: 1;
-  pointer-events: none;
-  border-radius: 18px;
-}
-
-/* Responsive tweaks for iOS/mobile */
-@media (max-width: 1024px) {
-  .about-image-wrapper {
-    min-height: 220px;
-    margin-bottom: 0;
-  }
-  .about-image {
-    max-width: 340px;
-    min-width: 160px;
-    min-height: 160px;
-    aspect-ratio: 4/3;
-  }
-}
 @media (max-width: 768px) {
   .about-content {
     grid-template-columns: 1fr;
   }
-  .about-image-wrapper {
-    order: -1;
-    margin-bottom: 30px;
-    min-height: 180px;
-    justify-content: center;
-  }
-  .about-image {
-    max-width: 90vw;
-    min-width: 120px;
-    min-height: 120px;
-    aspect-ratio: 4/3;
-  }
 }
-@media (max-width: 480px) {
-  .about-image-wrapper {
-    min-height: 120px;
-    margin-bottom: 20px;
-  }
-  .about-image {
-    max-width: 100vw;
-    min-width: 80px;
-    min-height: 80px;
-    aspect-ratio: 4/3;
-    border-radius: 12px;
-  }
-  .about-image img,
-  .image-overlay {
-    border-radius: 12px;
-  }
-}
-
-/* --- End iOS/Responsive About Image Styles --- */
 
 .about-text h3 {
   font-size: 36px;
   font-weight: 700;
   margin-bottom: 25px;
-  color: var(--secondary);
+  color: white;
   position: relative;
   padding-bottom: 15px;
 }
@@ -943,7 +838,7 @@ ul {
 
 .about-text p {
   font-size: 16px;
-  color: var(--text-medium);
+  color: white;
   margin-bottom: 25px;
   line-height: 1.8;
 }
