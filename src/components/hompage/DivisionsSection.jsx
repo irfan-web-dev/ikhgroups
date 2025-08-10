@@ -175,10 +175,10 @@ const divisions = [
   },
   {
     id: 14,
-    title: " Plumbing Services",
-    icon: "fa-paint-roller",
+    title: "Plumbing Services",
+    icon: "fa-faucet", // Changed to a plumbing-related icon
     description:
-      "Professional painting services for industrial, commercial, and residential properties.",
+      "Expert plumbing services including installation, repair, and maintenance for all types of piping and fixtures.",
     link: "/divisions/plumbing-services",
   },
 ];
