@@ -28,20 +28,6 @@ export default function DivisionsSection() {
         }}
       ></div>
 
-      {/* Background Pattern */}
-      <div
-        style={{
-          position: "absolute",
-          top: 0,
-          left: 0,
-          width: "100%",
-          height: "100%",
-          background:
-            "linear-gradient(185deg, rgba(249, 115, 22, 0.03) 0%, rgba(249, 115, 22, 0.01) 50%, rgba(255, 255, 255, 1) 100%)",
-          zIndex: 0,
-        }}
-      ></div>
-
       <div className="container" style={{ position: "relative", zIndex: 1 }}>
         <div className="section-title">
           <h2>Our Divisions</h2>
