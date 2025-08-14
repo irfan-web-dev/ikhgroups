@@ -2,46 +2,40 @@
 import LottiePlayer from "@/components/LottiePlayer";
 import "./careers.css";
 import { useState } from "react";
+import emailjs from "emailjs-com";
 
 export default function Careers() {
   const [isSending, setIsSending] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null);
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     setIsSending(true);
     setSubmitStatus(null);
 
-    const formData = {
-      name: e.target.name.value,
-      email: e.target.email.value,
-      subject: e.target.subject.value,
-      message: e.target.message.value,
-      formType: "career", // Identifies this as the careers form
-    };
-
-    try {
-      const response = await fetch("/api/send-email", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
+    emailjs
+      .sendForm(
+        "service_e37jexg", // EmailJS Service ID
+        "template_1ecklkn", // EmailJS Careers Template ID
+        e.target, // Form data
+        "1RxYD40uyZIuOuxpb" // EmailJS Public Key
+      )
+      .then(() => {
+        setSubmitStatus({
+          success: true,
+          message: `Thank you ${e.target.name.value}! We'll contact you soon.`,
+        });
+        e.target.reset();
+      })
+      .catch((error) => {
+        setSubmitStatus({
+          success: false,
+          message: error.text || "Failed to send. Please try again.",
+        });
+      })
+      .finally(() => {
+        setIsSending(false);
       });
-
-      if (!response.ok) throw new Error("Failed to send");
-
-      setSubmitStatus({
-        success: true,
-        message: `Thank you ${formData.name}! We'll contact you soon.`,
-      });
-      e.target.reset();
-    } catch (error) {
-      setSubmitStatus({
-        success: false,
-        message: error.message || "Failed to send. Please try again.",
-      });
-    } finally {
-      setIsSending(false);
-    }
   };
 
   return (
@@ -98,7 +92,7 @@ export default function Careers() {
                   required
                 />
                 <input
-                  name="subject"
+                  name="title"
                   type="text"
                   placeholder="Position Interested In"
                   required

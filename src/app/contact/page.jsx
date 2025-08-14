@@ -1,99 +1,56 @@
 "use client";
 import "./contact.css";
 import LottiePlayer from "@/components/LottiePlayer";
-import Link from "next/link";
 import { useEffect, useState, useRef } from "react";
+import emailjs from "emailjs-com";
 
 export default function Contact() {
   const [isSending, setIsSending] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null);
   const timerRef = useRef(null);
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     setIsSending(true);
     setSubmitStatus(null);
 
-    const formData = {
-      name: e.target.name.value,
-      email: e.target.email.value,
-      phone: e.target.phone.value,
-      subject: e.target.subject.value,
-      message: e.target.message.value,
-    };
-
-    try {
-      const response = await fetch("/api/send-email", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
-
-      const data = await response.json();
-
-      if (data.success) {
+    emailjs
+      .sendForm(
+        "service_e37jexg", // EmailJS Service ID
+        "template_ojyveyo", // Your EmailJS Contact Template ID
+        e.target, // Form element
+        "1RxYD40uyZIuOuxpb" // EmailJS Public Key
+      )
+      .then(() => {
         setSubmitStatus({
           success: true,
-          message: `Thank you, ${formData.name}! Your message has been sent. We'll contact you soon.`,
+          message: `Thank you ${e.target.name.value}! Your message has been sent. We'll contact you soon.`,
         });
         e.target.reset();
-      } else {
+      })
+      .catch((error) => {
         setSubmitStatus({
           success: false,
-          message: "Failed to send message. Please try again later.",
+          message: error.text || "Failed to send. Please try again.",
         });
-      }
-    } catch (error) {
-      setSubmitStatus({
-        success: false,
-        message: "An error occurred. Please try again later.",
+      })
+      .finally(() => {
+        setIsSending(false);
       });
-    } finally {
-      setIsSending(false);
-    }
   };
 
-  // Automatically remove the submitStatus message after 4 seconds
+  // Automatically remove the message after 5 seconds
   useEffect(() => {
     if (submitStatus) {
-      // Clear any previous timer
-      if (timerRef.current) {
-        clearTimeout(timerRef.current);
-      }
+      if (timerRef.current) clearTimeout(timerRef.current);
       timerRef.current = setTimeout(() => {
         setSubmitStatus(null);
       }, 5000);
     }
-    // Cleanup on unmount or when submitStatus changes
     return () => {
-      if (timerRef.current) {
-        clearTimeout(timerRef.current);
-      }
+      if (timerRef.current) clearTimeout(timerRef.current);
     };
   }, [submitStatus]);
-
-  useEffect(() => {
-    // Smooth scrolling
-    const anchors = document.querySelectorAll('Link[href^="#"]');
-    const handleClick = (e) => {
-      e.preventDefault();
-      const target = document.querySelector(e.currentTarget.getAttribute("#"));
-      if (target) {
-        target.scrollIntoView({ behavior: "smooth" });
-      }
-    };
-
-    anchors.forEach((anchor) => anchor.addEventListener("click", handleClick));
-
-    // Cleanup
-    return () => {
-      anchors.forEach((anchor) =>
-        anchor.removeEventListener("click", handleClick)
-      );
-    };
-  }, []);
 
   return (
     <>
@@ -115,12 +72,13 @@ export default function Contact() {
             </h1>
             <p className="animate__animated animate__fadeInUp">
               Get in touch with our team for inquiries, quotes, or any questions
-              you may have about your construction projects.
+              you may have about your projects.
             </p>
             <button
               onClick={() => {
-                const contactForm = document.getElementById("contactForm");
-                contactForm?.scrollIntoView({ behavior: "smooth" });
+                document
+                  .getElementById("contactForm")
+                  ?.scrollIntoView({ behavior: "smooth" });
               }}
               className="button button-primary animate__animated animate__pulse animate__infinite"
             >
@@ -133,12 +91,12 @@ export default function Contact() {
       <div className="content-animation">
         <LottiePlayer src="https://lottie.host/f3f39cf3-a512-49a9-9094-5e33f5e99654/8H97tqqugD.lottie" />
       </div>
+
       <div className="contact-container">
         <div className="contact-info-section">
           <h2 className="contact-section-title">Our Contact Information</h2>
           <p className="contact-description">
-            We're here to help and answer any questions you might have. We look
-            forward to hearing from you.
+            We're here to help and answer any questions you might have.
           </p>
 
           <div className="contact-methods-grid">
@@ -190,54 +148,35 @@ export default function Contact() {
             onSubmit={handleSubmit}
           >
             <div className="form-group">
-              <input
-                type="text"
-                id="name"
-                name="name"
-                required
-                placeholder="Your Name"
-              />
+              <input type="text" name="name" required placeholder="Your Name" />
             </div>
-
             <div className="form-group">
               <input
                 type="email"
-                id="email"
                 name="email"
                 required
                 placeholder="Your Email"
               />
             </div>
-
             <div className="form-group">
-              <input
-                type="tel"
-                id="phone"
-                name="phone"
-                placeholder="Phone Number"
-              />
+              <input type="tel" name="phone" placeholder="Phone Number" />
             </div>
-
             <div className="form-group">
               <input
                 type="text"
-                id="subject"
                 name="subject"
                 required
                 placeholder="Subject"
               />
             </div>
-
             <div className="form-group">
               <textarea
-                id="message"
                 name="message"
                 rows="5"
                 required
                 placeholder="Your Message"
               />
             </div>
-
             <button
               type="submit"
               className="button button-primary"
@@ -257,7 +196,7 @@ export default function Contact() {
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14023.786040804567!2d49.658691!3d27.010344!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjfCsDAwJzM3LjIiTiA0OcKwMznigJMzMS4zIkU!5e0!3m2!1sen!2s!4v1716888888888!5m2!1sen!2s"
               style={{ border: 0, width: "100%", height: "450px" }}
-              allowFullScreen=""
+              allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             />
